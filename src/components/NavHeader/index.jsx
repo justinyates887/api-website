@@ -2,13 +2,13 @@ import React from 'react'
 
 export function NavHeader(){
     return(
-        <nav className="navbar navbar-light bg-light fixed-top">
+        <nav className="navbar navbar-light  fixed-top navHover">
             <div className="container-fluid">
                 <a className="navbar-brand" href="/"><img src="../../../assets/img/double-waves.png" width="50"/></a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <span className="navbar-toggler-icon"></span>
                 </button>
-                <div className="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div className="offcanvas offcanvas-end" tabIndex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div className="offcanvas-header">
                     <h5 className="offcanvas-title" id="offcanvasNavbarLabel">Associated Pools Inc.</h5>
                     <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
