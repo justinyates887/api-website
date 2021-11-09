@@ -15,7 +15,7 @@ export function Company({ History }) {
 
     return (
         <>
-        {loading? (
+        {loading ? (
             <Loading />
         ) : (
             <>

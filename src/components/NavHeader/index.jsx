@@ -24,7 +24,7 @@ export function NavHeader(){
                         </a>
                         <ul className="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
                         <li><a className="dropdown-item" href="/about/company">The Company</a></li>
-                        <li><a className="dropdown-item" href="associatedpoolsinc.com">The People</a></li>
+                        <li><a className="dropdown-item" href="/about/people">The People</a></li>
                         <li><a className="dropdown-item" href="associatedpoolsinc.com">The Mission</a></li>
                         </ul>
                     </li>
