@@ -4,8 +4,8 @@ export function NavHeader(){
     return(
         <nav className="navbar navbar-light  fixed-top navHover">
             <div className="container-fluid">
-                <a className="navbar-brand" href="/"><img src="../../../assets/img/double-waves.png" width="50"/></a>
-                <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <a className="navbar-brand" id="opacity-full" href="/"><img src="../../../assets/img/double-waves.png" width="50"/></a>
+                <button className="navbar-toggler" id="opacity-full" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="offcanvas offcanvas-end" tabIndex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
@@ -23,7 +23,7 @@ export function NavHeader(){
                         About Us
                         </a>
                         <ul className="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                        <li><a className="dropdown-item" href="associatedpoolsinc.com">The Company</a></li>
+                        <li><a className="dropdown-item" href="/about/company">The Company</a></li>
                         <li><a className="dropdown-item" href="associatedpoolsinc.com">The People</a></li>
                         <li><a className="dropdown-item" href="associatedpoolsinc.com">The Mission</a></li>
                         </ul>

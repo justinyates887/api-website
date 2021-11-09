@@ -1,7 +1,7 @@
 import React from "react";
 import { NavHeader, Loading, Footer } from "../../components";
 import homeVideo from '../../assets/img/home-vid.mp4'
-import logo from '../../assets/img/Website Banner Minimal.png'
+import logo from '../../assets/img/double-waves.png'
 
 export function Home({ History }) {
 
@@ -19,22 +19,26 @@ export function Home({ History }) {
             <>
                 <NavHeader />
                 <div className="container-fluid m-0 p-0">
-                    <div className="img-wrapper">
-                        <video loop width="100%" height="100%" autoPlay={true} muted={true} className="mt-auto img-responsive">
-                            <source src={ homeVideo } />
-                            Browser does not support video.
-                        </video>
-                    </div>
+                    <div className="row ">
+                        <div className="col">
+                            <div className="img-wrapper">
+                                <video loop height="50%" autoPlay={true} muted={true} className="mt-auto img-responsive">
+                                    <source src={ homeVideo } />
+                                    Browser does not support video.
+                                </video>
+                            </div>
 
-                    <div className="card img-overlay" style={{width: '80rem'}}>
-                        <img src={ logo } style={{width: '80%'}}className="card-img-top" alt="..."/>
-                        <div className="card-body">
-                            <h5 className="card-title">Card title</h5>
-                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" className="btn btn-primary">Go somewhere</a>
+                        <div className="card img-overlay text-light filter-dark" style={{width: '100%', height: '100%'}}>
+                            <div className="card-body position-absolute top-50 start-50 translate-middle">
+                                <h1 className="d-inline h1">Associated Pools Inc.</h1>
+                                <h2 className="card-title mt-5 mb-3">Making you wet since 1984</h2>
+                                <h5 className="card-text mb-5">Over 30 years of designing and creating your dream outdoor living space.</h5>
+                                <a href="#" className="btn btn-primary">Get Inspired</a>
+                            </div>
+                        </div>
                         </div>
                     </div>
-                </div>
+                    </div>
                 <Footer className="mt-auto"/>
            </>
         )}
