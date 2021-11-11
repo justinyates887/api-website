@@ -62,7 +62,7 @@ img {
 }
 
 .lightBlue {
-  color: #a7c3d1;
+  color: #70aaf5;
 }
 
 /* ----------------Scrollbar------------------------ */
@@ -246,4 +246,14 @@ ul.timeline > li:before {
   width: 20px;
   height: 20px;
   z-index: 400;
+}
+
+#contact {
+  background-image: url("../img/map.jpg");
+  background-size:cover;
+}
+
+.scroll-area-sm {
+  height: 90%;
+  overflow-x: hidden
 }

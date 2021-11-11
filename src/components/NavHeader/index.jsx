@@ -42,7 +42,7 @@ export function NavHeader(){
                         </ul>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="associatedpoolsinc.com">Contact</a>
+                        <a className="nav-link" href="/contact">Contact</a>
                     </li>
                     </ul>
                     <form className="d-flex">

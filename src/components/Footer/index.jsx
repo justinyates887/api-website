@@ -6,9 +6,9 @@ export function Footer (){
             <footer className="footer mt-0 p=0">
 
             <div style={{background: '#868686'}} className=" text-light">
-                <div className="container p-4">
-                <div className="row">
-                    <div className="col-lg-6 col-md-12 mb-1">
+                <div className="container-fluid p-4">
+                <div className="row mx-3">
+                    <div className="col-lg-4 col-md-12 mb-1">
                     <h5 className="mb-3 text-light">Here for you...</h5>
                     <p>
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
@@ -16,14 +16,14 @@ export function Footer (){
                         voluptatem veniam, est atque cumque eum delectus sint!
                     </p>
                     </div>
-                    <div className="col-lg-3 col-md-6 mb-1">
+                    <div className="col-lg-2 col-md-6 mb-1">
                     <h5 className="mb-3 text-light">Links</h5>
                     <ul className="list-unstyled mb-0">
                         <li className="mb-1">
                         <a href="/" style={{color: '#f8f9fa'}}>Home</a>
                         </li>
                         <li className="mb-1">
-                        <a href="#!" style={{color: '#f8f9fa'}}>Residential</a>
+                        <a href="/services/residential" style={{color: '#f8f9fa'}}>Residential</a>
                         </li>
                         <li className="mb-1">
                         <a href="#!" style={{color: '#f8f9fa'}}>Commercial</a>
@@ -51,6 +51,10 @@ export function Footer (){
                         </tr>
                         </tbody>
                     </table>
+                    </div>
+                    <div className="col-lg-3 col-md-6 mb-1">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.066395072821!2d-94.79150768464956!3d38.8995969795703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c0958d504322a3%3A0x73b6796dcd196086!2s1800%20E%20Kansas%20City%20Rd%2C%20Olathe%2C%20KS%2066061!5e0!3m2!1sen!2sus!4v1636651770613!5m2!1sen!2sus"
+                         width="300" height="200" style={{border:0}} allowfullscreen="" loading="lazy" title="map"></iframe>
                     </div>
                 </div>
                 </div>
