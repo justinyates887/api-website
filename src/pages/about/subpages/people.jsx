@@ -1,7 +1,7 @@
 import React from "react";
 import VisibilitySensor from "react-visibility-sensor";
 import { NavHeader, Footer, Loading } from "../../../components";
-import Team from '../../../assets/img/team.png'
+import Team from '../../../assets/img/team.webp'
 import Friendly from '../../../assets/img/friendly.jpg'
 
 export function People({ History }) {
@@ -10,7 +10,7 @@ export function People({ History }) {
 
     React.useEffect( () => {
         setLoading(false);
-    })
+    }, [])
 
     return (
         <>
@@ -21,7 +21,7 @@ export function People({ History }) {
             <NavHeader />
 
               <div className="img-wrapper">
-                  <img src={ Team } alt="Group photo of team members" width="100%"></img>
+                  <img src={ Team } alt="Group of team members" width="100%"></img>
               </div>
 
               <div className="img-overlay title">
@@ -52,7 +52,7 @@ export function People({ History }) {
                                     <div className={isVisible ? "row d-flex justify-content-center fade-in appear" : "row d-flex justify-content-center fade-in"}>
                                         <div className="row m-0 p-0 justify-content-start align-items-center"> 
                                           <div className="col-2">
-                                            <img className="profile-pic" src="https://i.imgur.com/6tPhTUn.jpg" />
+                                            <img className="profile-pic" src="https://i.imgur.com/6tPhTUn.jpg" alt="Employee Bryan Yates"/>
                                           </div>
                                           <div className="col-6">
                                             <h3 className="mb-0 font-weight-normal">Bryan Yates</h3> 
@@ -76,7 +76,7 @@ export function People({ History }) {
                                     <div className={isVisible ? "row d-flex justify-content-center fade-in appear" : "row d-flex justify-content-center fade-in"}>
                                         <div className="row m-0 p-0 justify-content-start align-items-center"> 
                                           <div className="col-2">
-                                            <img className="profile-pic" src="https://i.imgur.com/6tPhTUn.jpg" />
+                                            <img className="profile-pic" src="https://i.imgur.com/6tPhTUn.jpg" alt="Employee Mark Polivka"/>
                                           </div>
                                           <div className="col-6">
                                             <h3 className="mb-0 font-weight-normal">Mark Polivka</h3> 
@@ -100,7 +100,7 @@ export function People({ History }) {
                                     <div className={isVisible ? "row d-flex justify-content-center fade-in appear" : "row d-flex justify-content-center fade-in"}>
                                         <div className="row m-0 p-0 justify-content-start align-items-center"> 
                                           <div className="col-2">
-                                            <img className="profile-pic" src="https://i.imgur.com/6tPhTUn.jpg" />
+                                            <img className="profile-pic" src="https://i.imgur.com/6tPhTUn.jpg" alt="Employee Justin Yates"/>
                                           </div>
                                           <div className="col-6">
                                             <h3 className="mb-0 font-weight-normal">Justin Yates</h3> 
@@ -124,7 +124,7 @@ export function People({ History }) {
                                     <div className={isVisible ? "row d-flex justify-content-center fade-in appear" : "row d-flex justify-content-center fade-in"}>
                                         <div className="row m-0 p-0 justify-content-start align-items-center"> 
                                           <div className="col-2">
-                                            <img className="profile-pic" src="https://i.imgur.com/6tPhTUn.jpg" />
+                                            <img className="profile-pic" src="https://i.imgur.com/6tPhTUn.jpg" alt="Employee Dominik Macias"/>
                                           </div>
                                           <div className="col-6">
                                             <h3 className="mb-0 font-weight-normal">Dominik Macias</h3> 
@@ -148,7 +148,7 @@ export function People({ History }) {
                                     <div className={isVisible ? "row d-flex justify-content-center fade-in appear" : "row d-flex justify-content-center fade-in"}>
                                         <div className="row m-0 p-0 justify-content-start align-items-center"> 
                                           <div className="col-2">
-                                            <img className="profile-pic" src="https://i.imgur.com/6tPhTUn.jpg" />
+                                            <img className="profile-pic" src="https://i.imgur.com/6tPhTUn.jpg" alt="Employee Mitchell Bomberger"/>
                                           </div>
                                           <div className="col-6">
                                             <h3 className="mb-0 font-weight-normal">Mitchell Bomberger</h3> 
@@ -172,7 +172,7 @@ export function People({ History }) {
                                     <div className={isVisible ? "row d-flex justify-content-center fade-in appear" : "row d-flex justify-content-center fade-in"}>
                                         <div className="row m-0 p-0 justify-content-start align-items-center"> 
                                           <div className="col-2">
-                                            <img className="profile-pic" src="https://i.imgur.com/6tPhTUn.jpg" />
+                                            <img className="profile-pic" src="https://i.imgur.com/6tPhTUn.jpg" alt="Employee Andrew Barth"/>
                                           </div>
                                           <div className="col-6">
                                             <h3 className="mb-0 font-weight-normal">Andrew Barth</h3> 
@@ -196,7 +196,7 @@ export function People({ History }) {
                                     <div className={isVisible ? "row d-flex justify-content-center fade-in appear" : "row d-flex justify-content-center fade-in"}>
                                         <div className="row m-0 p-0 justify-content-start align-items-center"> 
                                           <div className="col-2">
-                                            <img className="profile-pic" src="https://i.imgur.com/6tPhTUn.jpg" />
+                                            <img className="profile-pic" src="https://i.imgur.com/6tPhTUn.jpg" alt="Employee Chase Wilke"/>
                                           </div>
                                           <div className="col-6">
                                             <h3 className="mb-0 font-weight-normal">Chase Wilke</h3> 
@@ -231,7 +231,7 @@ export function People({ History }) {
                         </div>
                         </div>
                         <div className="col-sm">
-                          <img src={ Friendly } alt="A photo of different employees" height='100%' width="80%"></img>
+                          <img src={ Friendly } alt="Group of employees standing together." height='100%' width="80%"></img>
                         </div>
                       </div>
                   </div>

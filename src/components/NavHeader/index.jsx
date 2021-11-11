@@ -4,7 +4,7 @@ export function NavHeader(){
     return(
         <nav className="navbar navbar-light  fixed-top navHover">
             <div className="container-fluid">
-                <a className="navbar-brand" id="opacity-full" href="/"><img src="../../../assets/img/double-waves.png" width="50"/></a>
+                <a className="navbar-brand" id="opacity-full" href="/"><img src="../../../assets/img/double-waves.webp" width="50" alt=""/></a>
                 <button className="navbar-toggler" id="opacity-full" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <span className="navbar-toggler-icon"></span>
                 </button>
