@@ -54,7 +54,7 @@ export function Footer (){
                     </div>
                     <div className="col-lg-3 col-md-6 mb-1">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.066395072821!2d-94.79150768464956!3d38.8995969795703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c0958d504322a3%3A0x73b6796dcd196086!2s1800%20E%20Kansas%20City%20Rd%2C%20Olathe%2C%20KS%2066061!5e0!3m2!1sen!2sus!4v1636651770613!5m2!1sen!2sus"
-                         width="300" height="200" style={{border:0}} allowfullscreen="" loading="lazy" title="map"></iframe>
+                         width="300" height="200" style={{border:0}} allowFullScreen="" loading="lazy" title="map"></iframe>
                     </div>
                 </div>
                 </div>
