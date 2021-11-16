@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const baseUrl = 'localhost:3873/api'
+const baseUrl = 'localhost:3873/api/'
 
 export default {
     customer(url = baseUrl + 'customer/'){

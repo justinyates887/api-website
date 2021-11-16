@@ -25,7 +25,7 @@ export function NavHeader(){
                         <ul className="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
                         <li><a className="dropdown-item" href="/about/company">The Company</a></li>
                         <li><a className="dropdown-item" href="/about/people">The People</a></li>
-                        <li><a className="dropdown-item" href="associatedpoolsinc.com">The Mission</a></li>
+                        <li><a className="dropdown-item" href="/about/mission">The Mission</a></li>
                         </ul>
                     </li>
                     <li className="nav-item dropdown">
@@ -33,12 +33,12 @@ export function NavHeader(){
                         Services
                         </a>
                         <ul className="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                        <li><a className="dropdown-item" href="associatedpoolsinc.com">Residential</a></li>
-                        <li><a className="dropdown-item" href="associatedpoolsinc.com">Commercial</a></li>
+                        <li><a className="dropdown-item" href="/services/residential">Residential</a></li>
+                        <li><a className="dropdown-item" href="/services/commercial">Commercial</a></li>
                         <li>
                             <hr className="dropdown-divider" />
                         </li>
-                        <li><a className="dropdown-item" href="associatedpoolsinc.com">Service</a></li>
+                        <li><a className="dropdown-item" href="/services/service">Service</a></li>
                         </ul>
                     </li>
                     <li className="nav-item">

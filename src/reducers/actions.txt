@@ -1,4 +1,5 @@
 import { ACTION_TYPES } from '../actions/customer'
+
 const initialState = {
     list: []
 }
