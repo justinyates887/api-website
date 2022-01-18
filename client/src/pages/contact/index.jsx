@@ -1,5 +1,6 @@
 import React from "react";
 import { NavHeader, Footer, Loading, useForm } from "../../components";
+import { getGoogleReviews } from "../../utils/api";
 import mail from "../../components/Mailer/mail"
 
 const initialFieldValues = {
@@ -18,8 +19,14 @@ const initialFieldValues = {
 export function Contact( props ) {
     
     const [loading, setLoading] = React.useState(true);
+    const [reviews, setReviews] = React.useState([])
 
     React.useEffect( () => {
+        getGoogleReviews()
+        .then(( { data } ) => {
+            console.log(data)
+            setReviews(data.reviews)
+        })
         setLoading(false);
     }, [])
 
@@ -64,6 +71,11 @@ export function Contact( props ) {
         }
 
     }
+    
+    const mapReviews = Object.entries(reviews)
+
+
+    
 
     return (
         <>
@@ -111,18 +123,26 @@ export function Contact( props ) {
             </div>
 
 
-                <div className="card" style={{width: '90%'}}>
+                <div className="card" style={{width: '90%', height: '10%'}}>
                     <div className="row">
-
                         <div className="col-md-6 col-sm-12">
                             <h5 className="card-title">Still In Doubt?</h5>
                             <h6 className="card-subtitle mb-4 text-muted">Hear What Our Customers Have To Say</h6>
-                            <div className="scroll-area-sm">
+                            <div className="scroll-area-sm" style={{height: '35%'}}>
                                 <div style={{position: 'static'}} className="ps ps--active-y">
-                                    <div className="ps-content">
-                                        <p>With the increase demand of online customers. I had to take my business online. BBBootstrap Team guided me at each step and enabled me to centralise my work and have control on all aspect of my online business.With the increase demand of online customers. I had to take my business online. BBBootstrap Team guided me at each step and enabled me to centralise my work and have control on all aspect of my online business.</p>
-                                        <p>With the increase demand of online customers. I had to take my business online. BBBootstrap Team guided me at each step and enabled me to centralise my work and have control on all aspect of my online business.With the increase demand of online customers. I had to take my business online. BBBootstrap Team guided me at each step and enabled me to centralise my work and have control on all aspect of my online business.With the increase demand of online customers. I had to take my business online. BBBootstrap Team guided me at each step and enabled me to centralise my work and have control on all aspect of my online business.</p>
-                                        <p>With the increase demand of online customers. I had to take my business online. BBBootstrap Team guided me at each step and enabled me to centralise my work and have control on all aspect of my online business.With the increase demand of online customers. I had to take my business online. BBBootstrap Team guided me at each step and enabled me to centralise my work and have control on all aspect of my online business.With the increase demand of online customers. I had to take my business online. BBBootstrap Team guided me at each step and enabled me to centralise my work and have control on all aspect of my online business.With the increase demand of online customers. I had to take my business online. BBBootstrap Team guided me at each step and enabled me to centralise my work and have control on all aspect of my online business.With the increase demand of online customers. I had to take my business online. BBBootstrap Team guided me at each step and enabled me to centralise my work and have control on all aspect of my online business.</p>
+                                    <div id="google-reviews">
+                                        { 
+                                        mapReviews.map((review) => {
+                                            return (
+                                                <div className="card" style={{width: '90%'}} key={review[1].author_name}>
+                                                    <div className="card-body">
+                                                        <h5 className="card-title">{`${review[1].author_name}`}</h5>
+                                                        <p className="card-text">{`${review[1].text}`}</p>
+                                                    </div>
+                                                </div>
+                                                )
+                                            })
+                                        }
                                     </div>
                                 </div>
                             </div>
