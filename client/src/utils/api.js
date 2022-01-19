@@ -8,3 +8,13 @@ export function getGoogleReviews() {
         console.log('Error at client axios getGoogleReviews' + err)
     })
 }
+
+export function sendMail(values) {
+    return axios.post(`http://${backendUrl}/api/access`, {
+        values
+    }, {
+        withCredentials: true
+    }).catch((err) => {
+        console.log(err)
+    })
+}

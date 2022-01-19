@@ -15,7 +15,7 @@ a {
 }
 
 p {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 body {
@@ -30,6 +30,9 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+.bi-star-fill {
+  fill: #FFCE44;
 }
 
 .carousel-img {
@@ -74,9 +77,6 @@ img {
 }
 
 /* ----------------Scrollbar------------------------ */
-::-webkit-scrollbar {
-  width: 12px;
-}
 
 /* Track */
 ::-webkit-scrollbar-track {
@@ -223,6 +223,14 @@ background: rgba(255, 255, 255, 0.4);
   background-color: #E0E0E0
 }
 
+.review-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: contain;
+  background-color: #E0E0E0
+}
+
 /*----------------------------Timeline---------------------------------------*/
 ul.timeline {
   list-style-type: none;
@@ -262,6 +270,6 @@ ul.timeline > li:before {
 }
 
 .scroll-area-sm {
-  height: 90%;
+  max-height: 35%;
   overflow-x: hidden
 }

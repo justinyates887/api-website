@@ -1,7 +1,8 @@
 import React from "react";
-import { NavHeader, Footer, Loading, useForm } from "../../components";
-import { getGoogleReviews } from "../../utils/api";
-import mail from "../../components/Mailer/mail"
+import { NavHeader, Footer, Loading, useForm, StarRating } from "../../components";
+import { getGoogleReviews, sendMail } from "../../utils/api";
+
+import ReCaptchaV2 from 'react-google-recaptcha'
 
 const initialFieldValues = {
     firstName: '',
@@ -24,7 +25,6 @@ export function Contact( props ) {
     React.useEffect( () => {
         getGoogleReviews()
         .then(( { data } ) => {
-            console.log(data)
             setReviews(data.reviews)
         })
         setLoading(false);
@@ -49,6 +49,18 @@ export function Contact( props ) {
         return Object.values(temp).every(x => x === "")
     }
 
+    const handleToken = (token) => {
+        setValues((currentForm) => {
+         return {...currentForm, token }
+        })
+      }
+
+    const handleExpire = () => {
+        setValues((currentForm) => {
+            return {...currentForm, token: null }
+        })
+    } 
+
     const {
         values,
         setValues,
@@ -57,25 +69,12 @@ export function Contact( props ) {
         handleInputChange
     } = useForm(initialFieldValues, validate)
 
-    const handleSubmit = e => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log(values);
-        if(validate()) {
-           try{
-                mail(values)
-                window.alert("Form submitted!")
-           } catch(e) {
-                console.log(e)
-               window.alert("Something went wrong... please try again later or call (913)-888-7946")
-           }
-        }
-
+        sendMail(values)
     }
     
     const mapReviews = Object.entries(reviews)
-
-
-    
 
     return (
         <>
@@ -122,8 +121,8 @@ export function Contact( props ) {
                 </div>
             </div>
 
-
-                <div className="card" style={{width: '90%', height: '10%'}}>
+            <div className="row" style={{height: '10%'}}>
+                <div className="card" style={{width: '90%'}}>
                     <div className="row">
                         <div className="col-md-6 col-sm-12">
                             <h5 className="card-title">Still In Doubt?</h5>
@@ -134,10 +133,29 @@ export function Contact( props ) {
                                         { 
                                         mapReviews.map((review) => {
                                             return (
-                                                <div className="card" style={{width: '90%'}} key={review[1].author_name}>
+                                                <div className="card m-4" style={{width: '90%'}} key={review[1].author_name}>
                                                     <div className="card-body">
-                                                        <h5 className="card-title">{`${review[1].author_name}`}</h5>
-                                                        <p className="card-text">{`${review[1].text}`}</p>
+                                                        <div className="row m-0 mb-2 p-0 justify-content-start align-items-center">
+                                                          <div className="col-2">
+                                                              <img className="review-pic" src={review[1].profile_photo_url} alt="reviewer"/>
+                                                          </div>
+                                                          <div className="col-6">
+                                                            <h5 className="card-title">{`${review[1].author_name}`}</h5>
+                                                          </div>
+                                                        </div>
+                                                        <div className="row mb-2">
+                                                            <div className="col-2 mt-2">
+                                                                <StarRating params={review[1].rating} />
+                                                            </div>
+                                                            <div className="col mt-2">
+                                                                <p className="text-secondary text-start">{review[1].relative_time_description}</p>
+                                                            </div>
+                                                        </div>
+                                                        <div className="row">
+                                                          <div className="col">
+                                                            <p className="card-text">{`${review[1].text}`}</p>
+                                                          </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 )
@@ -266,7 +284,7 @@ export function Contact( props ) {
                                     />
                                 </div>
                                 <div className="mb-3">
-                                    <label htmlFor="exampleFormControlTextarea1" className="form-label">What are you looking for?</label>
+                                    <label htmlFor="textArea" className="form-label">What are you looking for?</label>
                                     <textarea 
                                         className="form-control" 
                                         name="message" 
@@ -277,9 +295,20 @@ export function Contact( props ) {
                                         required={true}
                                     ></textarea>
                                 </div>
+                                <div className="row mb-2">
+                                    <ReCaptchaV2 sitekey={'6LfvqiIeAAAAAAXkFian-w1FsiVjd4kxSxuXYfS5'} 
+                                      onChange={handleToken}
+                                      onExpired={handleExpire}
+                                    />
+                                </div>
                                 <div className="row">
                                     <div className="col-auto">
-                                        <button type="submit" className="btn btn-primary" name="Submit">Submit</button>
+                                        <button 
+                                            type="submit" 
+                                            className="btn btn-primary" 
+                                            name="Submit"
+                                            onSubmit={handleSubmit}
+                                            >Submit</button>
                                     </div>
                                     <div className="col-auto">
                                         <button className="btn btn-outline-danger" name="clear">Clear</button>
@@ -289,6 +318,7 @@ export function Contact( props ) {
                         </div>
 
                     </div>
+                </div>
                 </div>
 
             <Footer />
