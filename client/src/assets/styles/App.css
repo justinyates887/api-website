@@ -7,6 +7,7 @@
   Offset Dark Blue:--#2d4957
   Light Gray:--------#c4c2cf
 */
+
 html {
   scroll-behavior: smooth;
 }
@@ -270,6 +271,11 @@ ul.timeline > li:before {
 }
 
 .scroll-area-sm {
-  max-height: 35%;
-  overflow-x: hidden
+  overflow:scroll;
+  max-height: 330px;
+  overflow-x: hidden;
+}
+
+.margin-top-lower {
+  margin-top: 5%;
 }

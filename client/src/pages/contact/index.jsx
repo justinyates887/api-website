@@ -71,38 +71,33 @@ export function Contact( props ) {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        sendMail(values)
+        if(values.token != null) sendMail(values)
+        else window.alert("Please complete Recaptcha to submit")
     }
     
     const mapReviews = Object.entries(reviews)
 
     return (
-        <>
+        <div id="contact">
         {loading ? (
             <Loading />
         ) : (
-            <div id="contact">
+            <div>
             <NavHeader />
 
-            <div className="row mt-5">
-                <div className="col text-light text-center">
-                    <h1>Give Us A Shout</h1>
-                </div>
-            </div>
-
-            <div className="row">
+            <div className="row center" style={{ width: '60%'}}>
                 <div className="col-md-4 col-sm-12 text-center mt-5">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="lightBlue" className="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="royalBlue" className="bi bi-geo-alt-fill" viewBox="0 0 16 16">
                       <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
                     </svg>
                     <p className="text-light mt-4">
                         <strong>Address: </strong>
-                        1800 E. Kasnas City Rd. <br/>
+                        1800 E. Kansas City Rd. <br/>
                         Olathe, KS 66061
                     </p>
                 </div>
                 <div className="col-md-4 col-sm-12 text-center mt-5">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="lightBlue" className="bi bi-telephone-fill" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="royalBlue" className="bi bi-telephone-fill" viewBox="0 0 16 16">
                       <path fillRule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
                     </svg>
                     <p className="text-light mt-4">
@@ -111,7 +106,7 @@ export function Contact( props ) {
                     </p>
                 </div>
                 <div className="col-md-4 col-sm-12 text-center mt-5">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="lightBlue" className="bi bi-envelope-open-fill" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="royalBlue" className="bi bi-envelope-open-fill" viewBox="0 0 16 16">
                       <path d="M8.941.435a2 2 0 0 0-1.882 0l-6 3.2A2 2 0 0 0 0 5.4v.314l6.709 3.932L8 8.928l1.291.718L16 5.714V5.4a2 2 0 0 0-1.059-1.765l-6-3.2ZM16 6.873l-5.693 3.337L16 13.372v-6.5Zm-.059 7.611L8 10.072.059 14.484A2 2 0 0 0 2 16h12a2 2 0 0 0 1.941-1.516ZM0 13.373l5.693-3.163L0 6.873v6.5Z"/>
                     </svg>
                     <p className="text-light mt-4">
@@ -121,52 +116,10 @@ export function Contact( props ) {
                 </div>
             </div>
 
-            <div className="row" style={{height: '10%'}}>
-                <div className="card" style={{width: '90%'}}>
+            <div className="row">
+                <div className="card" style={{minWidth: '40%'}}>
                     <div className="row">
-                        <div className="col-md-6 col-sm-12">
-                            <h5 className="card-title">Still In Doubt?</h5>
-                            <h6 className="card-subtitle mb-4 text-muted">Hear What Our Customers Have To Say</h6>
-                            <div className="scroll-area-sm" style={{height: '35%'}}>
-                                <div style={{position: 'static'}} className="ps ps--active-y">
-                                    <div id="google-reviews">
-                                        { 
-                                        mapReviews.map((review) => {
-                                            return (
-                                                <div className="card m-4" style={{width: '90%'}} key={review[1].author_name}>
-                                                    <div className="card-body">
-                                                        <div className="row m-0 mb-2 p-0 justify-content-start align-items-center">
-                                                          <div className="col-2">
-                                                              <img className="review-pic" src={review[1].profile_photo_url} alt="reviewer"/>
-                                                          </div>
-                                                          <div className="col-6">
-                                                            <h5 className="card-title">{`${review[1].author_name}`}</h5>
-                                                          </div>
-                                                        </div>
-                                                        <div className="row mb-2">
-                                                            <div className="col-2 mt-2">
-                                                                <StarRating params={review[1].rating} />
-                                                            </div>
-                                                            <div className="col mt-2">
-                                                                <p className="text-secondary text-start">{review[1].relative_time_description}</p>
-                                                            </div>
-                                                        </div>
-                                                        <div className="row">
-                                                          <div className="col">
-                                                            <p className="card-text">{`${review[1].text}`}</p>
-                                                          </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                )
-                                            })
-                                        }
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-md-6 col-sm-12 mt-3">
+                        <div className="col m-4">
                             <h2 className="mb-4">Give Us A Shout</h2>
                             <form onSubmit={handleSubmit}>
                                 <div className="row">
@@ -301,7 +254,7 @@ export function Contact( props ) {
                                       onExpired={handleExpire}
                                     />
                                 </div>
-                                <div className="row">
+                                <div className="row mt-3">
                                     <div className="col-auto">
                                         <button 
                                             type="submit" 
@@ -311,10 +264,59 @@ export function Contact( props ) {
                                             >Submit</button>
                                     </div>
                                     <div className="col-auto">
-                                        <button className="btn btn-outline-danger" name="clear">Clear</button>
+                                        <button 
+                                            className="btn btn-outline-danger" 
+                                            name="clear"
+                                            onClick={() => setValues(initialFieldValues)}
+                                            >Clear</button>
                                     </div>
                                 </div>
                             </form>
+                        </div>
+                        <div className="row mt-4">
+                            <div className="col ms-4">
+                                <h5 className="card-title">Still In Doubt?</h5>
+                                <h6 className="card-subtitle mb-4 text-muted">Hear What Our Customers Have To Say</h6>
+                            </div>
+                            <div className="scroll-area-sm">
+                                <div className="row">
+                                    <div id="google-reviews">
+                                        { 
+                                        mapReviews.map((review) => {
+                                            return (
+                                                <div className="card m-4" style={{width: '90%'}} key={review[1].author_name}>
+                                                    <div className="card-body">
+                                                        <div className="row m-0 mb-2 p-0 justify-content-start align-items-center">
+                                                          <div className="col-2">
+                                                              <img className="review-pic" src={review[1].profile_photo_url} alt="reviewer"/>
+                                                          </div>
+                                                          <div className="col-6">
+                                                            <h5 className="card-title">{`${review[1].author_name}`}</h5>
+                                                          </div>
+                                                        </div>
+                                                        <div className="row mb-2">
+                                                            <div className="col mt-2">
+                                                                <StarRating params={review[1].rating} />
+                                                            </div>
+                                                        </div>
+                                                        <div className="row">
+                                                            <div className="col mt-2">
+                                                                <p className="text-secondary text-start">{review[1].relative_time_description}</p>
+                                                            </div>
+                                                        </div>
+                                                        <div className="row">
+                                                          <div className="col">
+                                                            <p className="card-text">{`${review[1].text}`}</p>
+                                                          </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                )
+                                            })
+                                        }
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                     </div>
@@ -324,6 +326,6 @@ export function Contact( props ) {
             <Footer />
             </div>
         )}
-        </>
+        </div>
     )
 }
