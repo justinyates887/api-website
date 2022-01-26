@@ -129,7 +129,7 @@ background: rgba(255, 255, 255, 0.4);
 .img-overlay {
   position: absolute;
   align-items: center;
-  top: 30%;
+  top: 20%;
   bottom: 0%;
   left: 0%;
   right: 0%;
@@ -141,6 +141,46 @@ background: rgba(255, 255, 255, 0.4);
 .img-overlay:before {
   display: block;
   height: 30%;
+}
+
+.img_logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: contain;
+  fill: #f8f9fa;
+}
+
+.vertical-timeline-element-icon,
+.bounce-in {
+  box-shadow: 0px 0px transparent;
+  text-align: center;
+}
+
+.vertical-timeline-element-date {
+  text-align: left;
+  width: 80%;
+}
+.img_logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 1172px) {
+  .vertical-timeline-element-content {
+    margin-left: 8%;
+  }
+  .img_logo {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media only screen and (max-width: 772px) {
+  .vertical-timeline-element-content {
+    margin-left: 14%;
+  }
 }
 
 .filter-dark{

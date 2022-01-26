@@ -24,9 +24,9 @@ export function People({ History }) {
                   <img src={ Team } alt="Group of team members" width="100%"></img>
               </div>
 
-              <div className="img-overlay title">
+              <div className="img-overlay title center">
                 <div className="mt-5" style={{width: '95%'}}>
-                    <div className="container-fluid">
+                    <div>
                         <div className="row mt-5">
                             <div className="card-body">
                                 <h1 className="card-title text-light">A Company Is Only <br /> As Good As Its People</h1>
@@ -48,7 +48,7 @@ export function People({ History }) {
                <li>
                     <VisibilitySensor>
                             {({ isVisible }) => (
-                                <div className="card center style={{width: '60%'}}">
+                                <div className="card center" style={{minWidth: '50%'}}>
                                     <div className={isVisible ? "row d-flex justify-content-center fade-in appear" : "row d-flex justify-content-center fade-in"}>
                                         <div className="row m-0 p-0 justify-content-start align-items-center"> 
                                           <div className="col-2">
@@ -59,7 +59,7 @@ export function People({ History }) {
                                           </div>
                                         </div>
                                         <div className="row px-3"> 
-                                        <p className="text-muted bg-light mt-4 mb-3">
+                                        <p className="text-muted mt-4 mb-3">
                                             Lorem Ipsum some fucking text about these guys, their interests, and what they do for the company.
                                         </p> 
                                         </div>
@@ -72,7 +72,7 @@ export function People({ History }) {
                     <li>
                     <VisibilitySensor>
                             {({ isVisible }) => (
-                                <div className="card center style={{width: '60%'}}">
+                                <div className="card center" style={{minWidth: '50%'}}>
                                     <div className={isVisible ? "row d-flex justify-content-center fade-in appear" : "row d-flex justify-content-center fade-in"}>
                                         <div className="row m-0 p-0 justify-content-start align-items-center"> 
                                           <div className="col-2">
@@ -96,7 +96,7 @@ export function People({ History }) {
                     <li>
                     <VisibilitySensor>
                             {({ isVisible }) => (
-                                <div className="card center style={{width: '60%'}}">
+                                <div className="card center style={{minWidth: '60%'}}">
                                     <div className={isVisible ? "row d-flex justify-content-center fade-in appear" : "row d-flex justify-content-center fade-in"}>
                                         <div className="row m-0 p-0 justify-content-start align-items-center"> 
                                           <div className="col-2">
@@ -120,7 +120,7 @@ export function People({ History }) {
                     <li>
                     <VisibilitySensor>
                             {({ isVisible }) => (
-                                <div className="card center style={{width: '60%'}}">
+                                <div className="card center style={{minWidth: '60%'}}">
                                     <div className={isVisible ? "row d-flex justify-content-center fade-in appear" : "row d-flex justify-content-center fade-in"}>
                                         <div className="row m-0 p-0 justify-content-start align-items-center"> 
                                           <div className="col-2">
@@ -144,7 +144,7 @@ export function People({ History }) {
                     <li>
                     <VisibilitySensor>
                             {({ isVisible }) => (
-                                <div className="card center style={{width: '60%'}}">
+                                <div className="card center style={{minWidth: '60%'}}">
                                     <div className={isVisible ? "row d-flex justify-content-center fade-in appear" : "row d-flex justify-content-center fade-in"}>
                                         <div className="row m-0 p-0 justify-content-start align-items-center"> 
                                           <div className="col-2">
@@ -168,7 +168,7 @@ export function People({ History }) {
                     <li>
                     <VisibilitySensor>
                             {({ isVisible }) => (
-                                <div className="card center style={{width: '60%'}}">
+                                <div className="card center style={{minWidth: '60%'}}">
                                     <div className={isVisible ? "row d-flex justify-content-center fade-in appear" : "row d-flex justify-content-center fade-in"}>
                                         <div className="row m-0 p-0 justify-content-start align-items-center"> 
                                           <div className="col-2">
@@ -192,7 +192,7 @@ export function People({ History }) {
                     <li>
                     <VisibilitySensor>
                             {({ isVisible }) => (
-                                <div className="card center style={{width: '60%'}}">
+                                <div className="card center style={{minWidth: '60%'}}">
                                     <div className={isVisible ? "row d-flex justify-content-center fade-in appear" : "row d-flex justify-content-center fade-in"}>
                                         <div className="row m-0 p-0 justify-content-start align-items-center"> 
                                           <div className="col-2">
@@ -216,25 +216,25 @@ export function People({ History }) {
 
                <VisibilitySensor>
                     {({ isVisible }) => (
-                  <div className={isVisible ? "card center mb-4 mt-4 fade-in appear" : "card center mb-4 mt-4 fade-in"} style={{width: '97%'}}>
-                    <div className="row mt-4">
-                      <div className="col-sm">
-                        <div className="card-body text-center">
-                            <h2 className="card-title">None Of This Would Be Possible...</h2>
-                            <p className="card-text mt-3">
-                                ...without our amazing group of individuals. Each one of them will work countless hours to ensure your outdoor living space
-                                is exactly how you dreamed. 
-                                <br />
-                                <br />
-                                More text about the team and what customers can expect form them/us. Maybe a little quote about the guys from a customer.
-                            </p>
-                        </div>
-                        </div>
-                        <div className="col-sm">
-                          <img src={ Friendly } alt="Group of employees standing together." height='100%' width="80%"></img>
-                        </div>
+                      <div className={isVisible ? "card center mb-4 mt-4 fade-in appear" : "card center mb-4 mt-4 fade-in"} style={{minWidth: '97%'}}>
+                        <div className="row mt-4">
+                          <div className="col-sm">
+                            <div className="card-body text-center">
+                                <h2 className="card-title">None Of This Would Be Possible...</h2>
+                                <p className="card-text mt-3">
+                                    ...without our amazing group of individuals. Each one of them will work countless hours to ensure your outdoor living space
+                                    is exactly how you dreamed. 
+                                    <br />
+                                    <br />
+                                    More text about the team and what customers can expect form them/us. Maybe a little quote about the guys from a customer.
+                                </p>
+                            </div>
+                            </div>
+                            <div className="col-sm">
+                              <img src={ Friendly } alt="Group of employees standing together." height='100%' width="80%"></img>
+                            </div>
+                          </div>
                       </div>
-                  </div>
                     )}
                 </VisibilitySensor>
 
