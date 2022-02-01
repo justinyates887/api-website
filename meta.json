@@ -1,0 +1,41 @@
+{
+    "home": {
+        "title": "Home - Associated Pools Inc.",
+        "description": "Discover how to make your backyard dreams a reality. With custom designs, quality materials and experienced staff we can cultivate a breathtaking, and delightful backyard dreamscape."
+    },
+
+    "about": {
+        "company": {
+            "title": "About - The Company",
+            "description": ""
+        },
+        "people": {
+            "title": "About - The People",
+            "description": "Our people are what make us. Come meet everyone who will be by your side throughout the process."
+        },
+        "mission": {
+            "title": "About - Our Mission",
+            "description": "We are dedicated to creating the outdoor space of your dreams."
+        }
+    },
+
+    "services": {
+        "commercial": {
+            "title": "Services - Commercial",
+            "description": ""
+        },
+        "residential": {
+            "title": "Services - Residential",
+            "description": ""
+        },
+        "service": {
+            "title": "Services - Maintenence",
+            "description": ""
+        }
+    },
+
+    "contact": {
+        "title": "Contact Us",
+        "description": "Reach out to schedule your free consultation and design!"
+    }
+}
