@@ -15,9 +15,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(express.static('public'))
 
-if(process.env.NODE_ENV === 'production'){
+handleMeta(app);
 
-    handleMeta();
+if(process.env.NODE_ENV === 'production'){
 
     app.use(express.static(path.join(__dirname, 'build')))
     app.get('*', (req, res) => {

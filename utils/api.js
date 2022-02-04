@@ -13,9 +13,9 @@ async function getGoogleReviews(){
     return response.json()
 }
 
-function handleMeta(){
+function handleMeta(app){
     //Dynamically update meta tags
-    const pathToIndex = path.join(__dirname, 'build/index.html')
+    const pathToIndex = path.join(__dirname, 'client/index.html')
 
     app.get('/', (req, res) => {
         const raw = fs.readFileSync(pathToIndex)
