@@ -96,7 +96,7 @@ export function People({ History }) {
                     <li>
                     <VisibilitySensor>
                             {({ isVisible }) => (
-                                <div className="card center style={{minWidth: '60%'}}">
+                                <div className="card center" style={{minWidth: '50%'}}>
                                     <div className={isVisible ? "row d-flex justify-content-center fade-in appear" : "row d-flex justify-content-center fade-in"}>
                                         <div className="row m-0 p-0 justify-content-start align-items-center"> 
                                           <div className="col-2">
@@ -120,7 +120,7 @@ export function People({ History }) {
                     <li>
                     <VisibilitySensor>
                             {({ isVisible }) => (
-                                <div className="card center style={{minWidth: '60%'}}">
+                                <div className="card center" style={{minWidth: '50%'}}>
                                     <div className={isVisible ? "row d-flex justify-content-center fade-in appear" : "row d-flex justify-content-center fade-in"}>
                                         <div className="row m-0 p-0 justify-content-start align-items-center"> 
                                           <div className="col-2">
@@ -144,7 +144,7 @@ export function People({ History }) {
                     <li>
                     <VisibilitySensor>
                             {({ isVisible }) => (
-                                <div className="card center style={{minWidth: '60%'}}">
+                                <div className="card center" style={{minWidth: '50%'}}>
                                     <div className={isVisible ? "row d-flex justify-content-center fade-in appear" : "row d-flex justify-content-center fade-in"}>
                                         <div className="row m-0 p-0 justify-content-start align-items-center"> 
                                           <div className="col-2">
@@ -168,7 +168,7 @@ export function People({ History }) {
                     <li>
                     <VisibilitySensor>
                             {({ isVisible }) => (
-                                <div className="card center style={{minWidth: '60%'}}">
+                                <div className="card center" style={{minWidth: '50%'}}>
                                     <div className={isVisible ? "row d-flex justify-content-center fade-in appear" : "row d-flex justify-content-center fade-in"}>
                                         <div className="row m-0 p-0 justify-content-start align-items-center"> 
                                           <div className="col-2">
@@ -192,7 +192,7 @@ export function People({ History }) {
                     <li>
                     <VisibilitySensor>
                             {({ isVisible }) => (
-                                <div className="card center style={{minWidth: '60%'}}">
+                                <div className="card center" style={{minWidth: '50%'}}>
                                     <div className={isVisible ? "row d-flex justify-content-center fade-in appear" : "row d-flex justify-content-center fade-in"}>
                                         <div className="row m-0 p-0 justify-content-start align-items-center"> 
                                           <div className="col-2">

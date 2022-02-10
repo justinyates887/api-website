@@ -18,10 +18,10 @@ export function Home({ History }) {
             <>
                 <NavHeader />
                 <div className="container-fluid m-0 p-0">
-                    <div className="row ">
+                    <div className="row mb-0 p-0">
                         <div className="col">
                             <div className="img-wrapper">
-                                <video loop height="50%" autoPlay={true} muted={true} className="mt-auto img-responsive">
+                                <video loop autoPlay={true} muted={true} className="mt-auto img-responsive">
                                     <source src={ homeVideo } />
                                     Browser does not support video.
                                 </video>
