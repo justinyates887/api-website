@@ -5,18 +5,19 @@ import "react-vertical-timeline-component/style.min.css";
 
 import { Meeting, Design, Contract, Excavation, Steel, Shotcrete, Tile, Concrete, Plaster, Equipment } from '../../../components/Icons'
 
-import eOne from '../../../assets/img/eOne.webp'
-import eTwo from '../../../assets/img/eTwo.webp'
-import eThree from '../../../assets/img/eThree.webp'
-import eFour from '../../../assets/img/eFour.webp'
-import eFive from '../../../assets/img/eFive.webp'
-
 export function Residential() {
     return (
         <>
             <NavHeader />
 
-            <GallerySlider />
+            <GallerySlider 
+                props={
+                    [
+                        '/eOne_CM-_QTwKgp.webp', '/eTwo_YawzE7Kust.webp', '/eThree_t6LSSU8H1.webp', '/eFour_mbSppmutVWn.webp', '/eFive_uEY1l5_3Rv.webp',
+                        '/eOne_CM-_QTwKgp.webp', '/eTwo_YawzE7Kust.webp', '/eThree_t6LSSU8H1.webp', '/eFour_mbSppmutVWn.webp', '/eFive_uEY1l5_3Rv.webp',
+                        '/eOne_CM-_QTwKgp.webp', '/eTwo_YawzE7Kust.webp', '/eThree_t6LSSU8H1.webp', '/eFour_mbSppmutVWn.webp', '/eFive_uEY1l5_3Rv.webp',
+                    ]
+                }/>
 
             <div className='row text-center m-5'>
                 <div className='col'>
@@ -24,14 +25,14 @@ export function Residential() {
                 </div>
             </div>
 
-            <VerticalTimeline>
+            <VerticalTimeline animate={true} lineColor={'lightBlue'}>
 
                 <VerticalTimelineElement
                     className="vertical-timeline-element"
                     contentStyle={{ background: "#70aaf5" }}
                     contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
                     date="Step 1"
-                    iconStyle={{ background: "#c4c2cf"}}
+                    iconStyle={{ background: "#c4c2cf", border: 'none'}}
                     icon={ <Meeting /> }
                 >
                     <h3 className="vertical-timeline-element-title">Free Consultation with Owner</h3>

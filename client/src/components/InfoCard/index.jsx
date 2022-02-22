@@ -5,8 +5,9 @@ function handleButton(props){
     if(!props.button){
         return
     } else {
+        console.log(props.button[0])
         return (
-            <button className={props.button[2]} href={props.button[0]}>{props.button[1]}</button>
+            <a className={props.button[2]} href={props.button[0]}>{props.button[1]}</a>
         )
     }
 }

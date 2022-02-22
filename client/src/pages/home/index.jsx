@@ -21,7 +21,7 @@ export function Home({ History }) {
                     <div className="row mb-0 p-0">
                         <div className="col">
                             <div className="img-wrapper">
-                                <video loop autoPlay={true} muted={true} className="mt-auto img-responsive">
+                                <video loop autoPlay={true} muted={true} className="mt-auto vid-responsive">
                                     <source src={ homeVideo } />
                                     Browser does not support video.
                                 </video>
