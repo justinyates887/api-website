@@ -1,5 +1,6 @@
 import React from "react";
 import { NavHeader, Loading, Footer } from "../../components";
+import CookieConsent from "react-cookie-consent";
 import homeVideo from '../../assets/img/home-vid.mp4'
 
 export function Home({ History }) {
@@ -35,7 +36,17 @@ export function Home({ History }) {
                         </div>
                         </div>
                     </div>
-                    </div>
+                    <CookieConsent
+                        location="bottom"
+                        buttonText="Agree"
+                        style={{ background: "#2d4957" }}
+                        buttonStyle={{ background: "#bfd8fa", fontSize: "13px" }}
+                        expires={150}
+                    >
+                        This website uses only necessary cookies. We do not track or sell <strong>ANY</strong> personal data.
+                    </CookieConsent>
+                </div>
+
                 <Footer className="mt-auto"/>
            </>
         )}
