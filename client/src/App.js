@@ -1,7 +1,7 @@
 import './assets/styles/App.css';
 import React from 'react';
 import { Routes, Route } from 'react-router-dom'
-import { Home, Company, People, Contact, Residential, Commercial } from './pages'
+import { Home, Company, People, Contact, Residential, Commercial, Dashboard } from './pages'
  //import { store } from './actions/store'
 import { Provider } from 'react-redux'
 
@@ -18,6 +18,8 @@ function App() {
         <Route path='/services/commercial' exact={true} element={<Commercial />} />
 
         <Route path='/contact' exact={true} element={<Contact />} />
+
+        <Route path='/dashboard' exact={true} element={<Dashboard />} />
       </Routes>
     //</Provider>
   );
