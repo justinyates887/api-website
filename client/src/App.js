@@ -1,7 +1,7 @@
 import './assets/styles/App.css';
 import React from 'react';
 import { Routes, Route } from 'react-router-dom'
-import { Home, Company, People, Contact, Residential, Commercial, Dashboard } from './pages'
+import { Home, Company, People, Contact, Residential, Commercial, Dashboard, Equipment, StoneTile } from './pages'
  //import { store } from './actions/store'
 
 function App() {
@@ -15,6 +15,9 @@ function App() {
 
         <Route path='/services/residential' exact={true} element={<Residential />} />
         <Route path='/services/commercial' exact={true} element={<Commercial />} />
+
+        <Route path='/resources/equipment' exact={true} element={<Equipment />} />
+        <Route path='/resources/stoneandtile' exact={true} element={<StoneTile />} />
 
         <Route path='/contact' exact={true} element={<Contact />} />
 

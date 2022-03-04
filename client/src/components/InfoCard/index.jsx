@@ -18,7 +18,9 @@ export function InfoCard(props){
             <div className="col-md-4">
                 <div className={`card text-center ${props.background}`}>
                     <div className="card-content">
-                        <h5 className="card-title"><span dangerouslySetInnerHTML={{__html: props.icon}}></span>{props.title}</h5>
+                        <div className="center" dangerouslySetInnerHTML={{__html: props.icon}}></div>
+                        <br />
+                        <h5 className="card-title">{props.title}</h5>
                         <p>{props.text}</p>
                         {
                             handleButton(props)

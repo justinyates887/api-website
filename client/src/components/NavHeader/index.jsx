@@ -41,10 +41,31 @@ export function NavHeader(){
                         <li><a className="dropdown-item" href="/services/service">Service</a></li>
                         </ul>
                     </li>
+                    <li className="nav-item dropdown">
+                        <a className="nav-link dropdown-toggle" href="associatedpoolsinc.com" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Resources
+                        </a>
+                        <ul className="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                        <li><a className="dropdown-item" href="/resources/equipment">Equipment</a></li>
+                        <li><a className="dropdown-item" href="/resources/stoneandtile">Stone & Tile</a></li>
+                        <li><a className="dropdown-item" href="/services/service">Service</a></li>
+                        </ul>
+                    </li>
                     <li className="nav-item">
                         <a className="nav-link" href="/contact">Contact</a>
                     </li>
                     </ul>
+                    <div className='row position-absolute bottom-0 start-50 translate-middle'>
+                        <div className='col'>
+                            <a href='/privacy'>Privacy</a>
+                        </div>
+                        <div className='col'>
+                            <a href='/cookies'>Cookies</a>
+                        </div>
+                        <div className='col'>
+                            <a href='/admin'>Admin</a>
+                        </div>
+                    </div>
                 </div>
                 </div>
             </div>

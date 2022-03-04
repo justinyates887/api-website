@@ -185,13 +185,7 @@ background: rgba(255, 255, 255, 0.4);
   height: 30%;
 }
 
-.img_logo {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  object-fit: contain;
-  fill: #f8f9fa;
-}
+
 
 .vertical-timeline-element-icon,
 .bounce-in {
@@ -199,14 +193,16 @@ background: rgba(255, 255, 255, 0.4);
   text-align: center;
 }
 
+.img_logo {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  fill: #f8f9fa;
+}
+
 .vertical-timeline-element-date {
   text-align: left;
   width: 80%;
-}
-.img_logo {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
 }
 
 @media only screen and (max-width: 1172px) {
@@ -348,7 +344,7 @@ ul.timeline > li:before {
 }
 
 #contact {
-  background-image: url("../img/map.jpg");
+  background-image: url("https://ik.imagekit.io/associatedpoolsinc/API/map_-NtT0wS77.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1643979899713");
   background-size:cover;
 }
 
@@ -398,4 +394,8 @@ ul.timeline > li:before {
   margin-top:0px;
   font-weight: 700;
   font-size: 1.65em;
+}
+
+.resource-card:hover {
+  outline: #0073de solid 3px;
 }

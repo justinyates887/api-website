@@ -3,7 +3,7 @@ import { NavHeader, Footer, GallerySlider} from '../../../components/'
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 
-import { Meeting, Design, Contract, Excavation, Steel, Shotcrete, Tile, Concrete, Plaster, Equipment } from '../../../components/Icons'
+import { Meeting, Design, Contract, Excavation, Steel, Shotcrete, Tile, Concrete, Plaster, Equipment, Swim } from '../../../components/Icons'
 
 export function Residential() {
     return (
@@ -29,10 +29,10 @@ export function Residential() {
 
                 <VerticalTimelineElement
                     className="vertical-timeline-element"
-                    contentStyle={{ background: "#70aaf5" }}
+                    contentStyle={{ background: "#bfd8fa" }}
                     contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
                     date="Step 1"
-                    iconStyle={{ background: "#c4c2cf", border: 'none'}}
+                    iconStyle={{ background: "#f8f9fa", border: 'none'}}
                     icon={ <Meeting /> }
                 >
                     <h3 className="vertical-timeline-element-title">Free Consultation with Owner</h3>
@@ -44,7 +44,7 @@ export function Residential() {
                 <VerticalTimelineElement
                     className="vertical-timeline-element"
                     date="Step 2"
-                    iconStyle={{ background: "#c4c2cf" }}
+                    iconStyle={{ background: "#f8f9fa" }}
                     icon={ <Design /> }
                 >
                     <h3 className="vertical-timeline-element-title">Design</h3>
@@ -57,7 +57,7 @@ export function Residential() {
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
                     date="Step 3"
-                    iconStyle={{ background: "#c4c2cf" }}
+                    iconStyle={{ background: "#f8f9fa" }}
                     icon={ <Contract /> }
                 >
                     <h3 className="vertical-timeline-element-title">Put it In Writing</h3>
@@ -70,7 +70,7 @@ export function Residential() {
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
                     date="Phase 1"
-                    iconStyle={{ background: "#70aaf5" }}
+                    iconStyle={{ background: "#f8f9fa" }}
                     icon={ <Excavation /> }
                 >
                     <h3 className="vertical-timeline-element-title">Excavation</h3>
@@ -84,7 +84,7 @@ export function Residential() {
                 <VerticalTimelineElement
                     className="vertical-timeline-element--education"
                     date="Phase 2"
-                    iconStyle={{ background: "#70aaf5" }}
+                    iconStyle={{ background: "#f8f9fa" }}
                     icon={ <Steel /> }
                 >
                     <h3 className="vertical-timeline-element-title">Form & Steel</h3>
@@ -97,7 +97,7 @@ export function Residential() {
                 <VerticalTimelineElement
                     className="vertical-timeline-element--education"
                     date="Phase 3"
-                    iconStyle={{ background: "#70aaf5" }}
+                    iconStyle={{ background: "#f8f9fa" }}
                     icon={ <Shotcrete /> }
                 >
                     <h3 className="vertical-timeline-element-title">Shotcrete</h3>
@@ -110,7 +110,7 @@ export function Residential() {
                 <VerticalTimelineElement
                     className="vertical-timeline-element--education"
                     date="Phase 4"
-                    iconStyle={{ background: "#70aaf5" }}
+                    iconStyle={{ background: "#f8f9fa" }}
                     icon={ <Tile /> }
                 >
                     <h3 className="vertical-timeline-element-title">Tile & Coping</h3>
@@ -122,7 +122,7 @@ export function Residential() {
                 <VerticalTimelineElement
                     className="vertical-timeline-element--education"
                     date="Phase 5"
-                    iconStyle={{ background: "#70aaf5" }}
+                    iconStyle={{ background: "#f8f9fa" }}
                     icon={ <Concrete /> }
                 >
                     <h3 className="vertical-timeline-element-title">Concrete Decking</h3>
@@ -135,7 +135,7 @@ export function Residential() {
                 <VerticalTimelineElement
                     className="vertical-timeline-element--education"
                     date="Phase 6"
-                    iconStyle={{ background: "#70aaf5" }}
+                    iconStyle={{ background: "#f8f9fa" }}
                     icon={ <Plaster /> }
                 >
                     <h3 className="vertical-timeline-element-title">Plaster</h3>
@@ -147,8 +147,9 @@ export function Residential() {
 
                 <VerticalTimelineElement
                     className="vertical-timeline-element--education"
+                    contentStyle={{ background: "#d0f0c0" }}
                     date="Phase 7"
-                    iconStyle={{ background: "#70aaf5" }}
+                    iconStyle={{ background: "#f8f9fa" }}
                     icon={ <Equipment /> }
                 >
                     <h3 className="vertical-timeline-element-title">Equipment Hookup</h3>
@@ -159,9 +160,9 @@ export function Residential() {
                 </VerticalTimelineElement>
 
                 <VerticalTimelineElement
-                    iconStyle={{ background: "rgb(16, 204, 82)", color: "#fff" }}
+                    iconStyle={{ background: "#f8f9fa" }}
                     date="Its time to swim!"
-                    icon={ <Equipment /> }
+                    icon={ <Swim /> }
                 />
 
             </VerticalTimeline>
