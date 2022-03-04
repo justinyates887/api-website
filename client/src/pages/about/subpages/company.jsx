@@ -2,7 +2,6 @@ import React from "react";
 import VisibilitySensor from "react-visibility-sensor";
 import { NavHeader, Footer, Loading, InfoCard } from "../../../components";
 import Banner from '../../../assets/img/banner-white.webp'
-import People from '../../../assets/img/people.jpg'
 import PoolOne from '../../../assets/img/pool-one.webp'
 
 export function Company({ History }) {

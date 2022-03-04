@@ -3,7 +3,6 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom'
 import { Home, Company, People, Contact, Residential, Commercial, Dashboard } from './pages'
  //import { store } from './actions/store'
-import { Provider } from 'react-redux'
 
 function App() {
   return (

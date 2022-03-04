@@ -17,6 +17,7 @@ export function Contract() {
             <img
             className="img_logo"
             src={ contract }
+            alt=""
             />
         </div>
     )
@@ -28,6 +29,7 @@ export function Design() {
             <img
             className="img_logo"
             src={ design }
+            alt=""
             />
         </div>
     )
@@ -39,6 +41,7 @@ export function Excavation() {
             <img
             className="img_logo"
             src={ excavation }
+            alt=""
             />
         </div>
     )
@@ -50,6 +53,7 @@ export function Meeting() {
             <img
             className="img_logo"
             src={ meeting }
+            alt=""
             />
         </div>
     )
@@ -61,6 +65,7 @@ export function Shotcrete() {
             <img
             className="img_logo"
             src={ shotcrete }
+            alt=""
             />
         </div>
     )
@@ -72,6 +77,7 @@ export function Steel() {
             <img
             className="img_logo"
             src={ steel }
+            alt=""
             />
         </div>
     )
@@ -83,6 +89,7 @@ export function Tile() {
             <img
             className="img_logo"
             src={ tile }
+            alt=""
             />
         </div>
     )
@@ -94,6 +101,7 @@ export function Concrete() {
             <img
             className="img_logo"
             src={ concrete }
+            alt=""
             />
         </div>
     )
@@ -105,6 +113,7 @@ export function Plaster() {
             <img
             className="img_logo"
             src={ plaster }
+            alt=""
             />
         </div>
     )
@@ -116,6 +125,7 @@ export function Equipment() {
             <img
             className="img_logo"
             src={ equipment }
+            alt=""
             />
         </div>
     )

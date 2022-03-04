@@ -37,7 +37,7 @@ export function Contact( props ) {
         temp.zip = values.zip ? "" : "This field is required"
         temp.message = values.message ? "" : "This field is required"
 
-        temp.email = (/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)
+        temp.email = (/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)
                     .test(values.email) ? "" : "Email is not valid"
 
         temp.phone = (/^\d{10}$/).test(values.phone) ? "" : "Phone number is not valid"
@@ -64,7 +64,6 @@ export function Contact( props ) {
     const {
         values,
         setValues,
-        errors,
         setErrors,
         handleInputChange
     } = useForm(initialFieldValues, validate)

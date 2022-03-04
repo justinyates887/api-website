@@ -1,9 +1,9 @@
-import React, { useRef } from "react";
+import React from "react";
 import { select } from 'd3';
 import { NavHeader } from "../../components";
 import { getUserData } from "../../utils/api";
 
-export function Dashboard({  }){
+export function Dashboard(){
 
     const [loading, setLoading] = React.useState(true);
     const [userData, setUserData] = React.useState({});
@@ -58,7 +58,7 @@ export function Dashboard({  }){
             console.log(err)
             setLoading(false)
         })
-    }, [])
+    })
 
     return (
         <>

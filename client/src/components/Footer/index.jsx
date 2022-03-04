@@ -1,6 +1,6 @@
 import React from "react";
 
-export function Footer (){
+export function Footer (props){
     return(
         <>
             <footer className="footer mt-0 p=0">
@@ -9,11 +9,9 @@ export function Footer (){
                 <div className="container-fluid p-4">
                 <div className="row mx-3">
                     <div className="col-lg-4 col-md-12 mb-1">
-                    <h5 className="mb-3 text-light">Here for you...</h5>
+                    <h5 className="mb-3 text-light">{props.title}</h5>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
-                        molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
-                        voluptatem veniam, est atque cumque eum delectus sint!
+                        {props.text}
                     </p>
                     </div>
                     <div className="col-lg-2 col-md-6 mb-1">
@@ -54,7 +52,7 @@ export function Footer (){
                     </div>
                     <div className="col-lg-3 col-md-6 mb-1">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.066395072821!2d-94.79150768464956!3d38.8995969795703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c0958d504322a3%3A0x73b6796dcd196086!2s1800%20E%20Kansas%20City%20Rd%2C%20Olathe%2C%20KS%2066061!5e0!3m2!1sen!2sus!4v1636651770613!5m2!1sen!2sus"
-                         width="300" height="200" style={{border:0}} allowFullScreen="" loading="lazy" title="map"></iframe>
+                         width="300" height="150" style={{border:0}} allowFullScreen="" loading="lazy" title="map"></iframe>
                     </div>
                 </div>
                 </div>
