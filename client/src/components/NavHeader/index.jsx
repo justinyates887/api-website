@@ -43,6 +43,16 @@ export function NavHeader(){
                     </li>
                     <li className="nav-item dropdown">
                         <a className="nav-link dropdown-toggle" href="associatedpoolsinc.com" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        What We Use
+                        </a>
+                        <ul className="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                        <li><a className="dropdown-item" href="/about/starting">Starting Equipment</a></li>
+                        <li><a className="dropdown-item" href="/about/pentair">Why Pentair?</a></li>
+                        <li><a className="dropdown-item" href="/about/chemicals">Chemicals</a></li>
+                        </ul>
+                    </li>
+                    <li className="nav-item dropdown">
+                        <a className="nav-link dropdown-toggle" href="associatedpoolsinc.com" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Resources
                         </a>
                         <ul className="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">

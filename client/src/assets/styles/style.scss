@@ -175,3 +175,157 @@
   }
 }
 
+// Image Map
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+$buttonRadius: 24px;
+$labelPaddingX: $buttonRadius * 1;
+$labelBorderRadius: 2px;
+$labelFade: 0.1s;
+$colorButton: #0044ff;
+$colorButtonHover: #4c76ff;
+$colorText: #333;
+$colorHeadingBackground: #555;
+
+#starting body {
+  margin: 0;
+}
+
+
+#starting .container {
+  width: 100%;
+  padding: 1em;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.lg-container {
+  position: relative;
+  margin: 1rem;
+  padding: 0;
+}
+
+.lg-image {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: scale-down;
+}
+
+#starting .lg-hotspot {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  &:hover,
+  &:active {
+    //  z-index: 999;
+    .lg-hotspot__button {
+      border-color: $colorButtonHover;
+      &:after {
+        background-color: $colorButtonHover;
+      }
+    }
+  }
+  &--selected {
+    z-index: 999;
+    .lg-hotspot__label {
+      opacity: 1;
+    }
+  }
+  &__button {
+    height: $buttonRadius * 2;
+    width: $buttonRadius * 2;
+    padding: 0px;
+    border-radius: 100%;
+    border: 1px solid $colorButton;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    animation: button-pulse 7s ease-in-out infinite;
+    &:after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+      content: "";
+      display: block;
+      height: $buttonRadius * 0.7;
+      width: $buttonRadius * 0.7;
+      border-radius: 100%;
+      border: 3px solid white;
+      background-color: $colorButton;
+      transition: border-color 1s linear;
+    }
+  }
+  &__label {
+    position: absolute;
+    padding: 0 0 1.1em 0;
+    width: 16em;
+    max-width: 50vw;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-family: "Open Sans", sans-serif;
+    font-size: 14.5px;
+    line-height: 1.45em;
+    z-index: -1;
+    pointer-events: none;
+    border-radius: $labelBorderRadius;
+    user-select: none;
+    opacity: 0;
+    transition: all $labelFade linear;
+    h4 {
+      margin: 0;
+      padding: 0.65em $labelPaddingX;
+      background-color: $colorHeadingBackground;
+      font-size: 1.1em;
+      font-weight: normal;
+      letter-spacing: 0.02em;
+      color: white;
+      border-radius: $labelBorderRadius $labelBorderRadius 0 0;
+    }
+    p {
+      margin: 0;
+      padding: 1.1em $labelPaddingX 0 $labelPaddingX;
+      color: $colorText;
+    }
+  }
+}
+
+.lg-hotspot--top-left .lg-hotspot__label {
+  top: $buttonRadius;
+  left: $buttonRadius;
+}
+
+.lg-hotspot--top-right .lg-hotspot__label {
+  top: $buttonRadius;
+  right: $buttonRadius;
+}
+
+.lg-hotspot--bottom-right .lg-hotspot__label {
+  right: $buttonRadius;
+  bottom: $buttonRadius;
+}
+
+.lg-hotspot--bottom-left .lg-hotspot__label {
+  bottom: $buttonRadius;
+  left: $buttonRadius;
+}
+
+@keyframes button-pulse {
+  0% {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+  40% {
+    transform: scale(1.15, 1.15);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
