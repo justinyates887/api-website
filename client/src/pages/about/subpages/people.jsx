@@ -73,7 +73,7 @@ export function People({ History }) {
                                         </div>
                                         <div className="row px-3"> 
                                         <p className="text-muted bg-light mt-4 mb-3">
-                                            Lorem Ipsum some fucking text about these guys, their interests, and what they do for the company.
+                                            Lorem Ipsum some text about these guys, their interests, and what they do for the company.
                                         </p> 
                                         </div>
                                     </div>
@@ -97,7 +97,7 @@ export function People({ History }) {
                                         </div>
                                         <div className="row px-3"> 
                                         <p className="text-muted bg-light mt-4 mb-3">
-                                            Lorem Ipsum some fucking text about these guys, their interests, and what they do for the company.
+                                            Lorem Ipsum some text about these guys, their interests, and what they do for the company.
                                         </p> 
                                         </div>
                                     </div>
@@ -113,7 +113,7 @@ export function People({ History }) {
                                 isVisible={isVisible}
                                 imgSrc='https://ik.imagekit.io/associatedpoolsinc/API/dom_JKX8s9t7tZx.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1646404644561'
                                 name='Dominik Macias'
-                                text='Masonry foreman. Puts tile and coping on shit. Mega hard worker, but super short.'
+                                text='Masonry foreman. Puts tile and coping on. Mega hard worker, but super short.'
                               />
                             )}
                         </VisibilitySensor>
@@ -126,7 +126,7 @@ export function People({ History }) {
                                 isVisible={isVisible}
                                 imgSrc='https://ik.imagekit.io/associatedpoolsinc/API/mitch_-lNzYScDZHf.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1646404644532'
                                 name='Mitchell Bomberger'
-                                text='Form and Steel foreman. Likes anime and hentai. Hates doing Monday saftey briefings.'
+                                text='Form and Steel foreman. Likes anime. Hates doing Monday saftey briefings.'
                             />
                             )}
                         </VisibilitySensor>
