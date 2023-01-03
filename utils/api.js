@@ -1,9 +1,6 @@
-const fetch = require('node-fetch-commonjs');
-const path = require('path')
 const fs = require('fs')
+const path = require('path')
 require ('dotenv');
-
-const meta = require('../meta.json')
 
 propertyId = '304634158';
 
@@ -11,22 +8,203 @@ const {BetaAnalyticsDataClient} = require('@google-analytics/data');
 
 const analyticsDataClient = new BetaAnalyticsDataClient();
 
-async function getGoogleReviews(){
-    const key = process.env.PLACES_KEY;
-    const response = await fetch(`https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJV4sNzLKVwIcR7u_sRrkfaSk&fields=review&key=${key}`, {
-        method: 'GET',
-    });
-    return response.json()
-}
+const indexPath  = path.resolve(__dirname, '..', 'build', 'index.html');
 
 function handleMeta(app){
-    //Dynamically update meta tags
 
+    app.get('/', (req, res) => {
+        fs.readFile(indexPath, 'utf8', (err, htmlData) => {
+            if (err) {
+                console.error('Error during file reading', err);
+                return res.status(404).end()
+            }
+
+            htmlData = htmlData.replace(
+                "<title>Associated Pools Inc</title>",
+                `<title>Home</title>`
+            )
+            .replace('__META_DESCRIPTION__', 'Welcome to the backyard of your dreams.')
+
+            return res.send(htmlData);
+        });
+    })
 
     app.get('/about/company', (req, res) => {
-        const raw = fs.readFileSync(pathToIndex)
-        const updated = raw.replace('__PAGE_META__', `<title>${pageTitle}</title>`)
-        res.send(updated)
+        fs.readFile(indexPath, 'utf8', (err, htmlData) => {
+            if (err) {
+                console.error('Error during file reading', err);
+                return res.status(404).end()
+            }
+
+            htmlData = htmlData.replace(
+                "<title>Associated Pools Inc</title>",
+                `<title>About Us</title>`
+            )
+            .replace('__META_DESCRIPTION__', 'Come learn more about Associated Pools, who we are, and what we do.')
+
+            return res.send(htmlData);
+        });
+    })
+
+    app.get('/about/people', (req, res) => {
+        fs.readFile(indexPath, 'utf8', (err, htmlData) => {
+            if (err) {
+                console.error('Error during file reading', err);
+                return res.status(404).end()
+            }
+
+            htmlData = htmlData.replace(
+                "<title>Associated Pools Inc</title>",
+                `<title>Our Team</title>`
+            )
+            .replace('__META_DESCRIPTION__', 'Meet the people who make your idea into reality')
+
+            return res.send(htmlData);
+        });
+    })
+    app.get('/services/residential', (req, res) => {
+        fs.readFile(indexPath, 'utf8', (err, htmlData) => {
+            if (err) {
+                console.error('Error during file reading', err);
+                return res.status(404).end()
+            }
+
+            htmlData = htmlData.replace(
+                "<title>Associated Pools Inc</title>",
+                `<title>Residential</title>`
+            )
+            .replace('__META_DESCRIPTION__', 'We can tackle any residential backyard project you may have')
+
+            return res.send(htmlData);
+        });
+    })
+    app.get('/services/commercial', (req, res) => {
+        fs.readFile(indexPath, 'utf8', (err, htmlData) => {
+            if (err) {
+                console.error('Error during file reading', err);
+                return res.status(404).end()
+            }
+
+            htmlData = htmlData.replace(
+                "<title>Associated Pools Inc</title>",
+                `<title>Commercial</title>`
+            )
+            .replace('__META_DESCRIPTION__', 'See why Kansas City contractors choose us again and again')
+
+            return res.send(htmlData);
+        });
+    })
+    app.get('/services/service', (req, res) => {
+        fs.readFile(indexPath, 'utf8', (err, htmlData) => {
+            if (err) {
+                console.error('Error during file reading', err);
+                return res.status(404).end()
+            }
+
+            htmlData = htmlData.replace(
+                "<title>Associated Pools Inc</title>",
+                `<title>Service</title>`
+            )
+            .replace('__META_DESCRIPTION__', 'We offer a wide variety of swimming pool maintenence services')
+
+            return res.send(htmlData);
+        });
+    })
+    app.get('/about/starting', (req, res) => {
+        fs.readFile(indexPath, 'utf8', (err, htmlData) => {
+            if (err) {
+                console.error('Error during file reading', err);
+                return res.status(404).end()
+            }
+
+            htmlData = htmlData.replace(
+                "<title>Associated Pools Inc</title>",
+                `<title>Starting Equipment</title>`
+            )
+            .replace('__META_DESCRIPTION__', 'See what your pool will come equipped with from the start')
+
+            return res.send(htmlData);
+        });
+    })
+    app.get('/about/chemicals', (req, res) => {
+        fs.readFile(indexPath, 'utf8', (err, htmlData) => {
+            if (err) {
+                console.error('Error during file reading', err);
+                return res.status(404).end()
+            }
+
+            htmlData = htmlData.replace(
+                "<title>Associated Pools Inc</title>",
+                `<title>Chemicals</title>`
+            )
+            .replace('__META_DESCRIPTION__', 'Know the chemicals used to treat and maintain your pool')
+
+            return res.send(htmlData);
+        });
+    })
+    app.get('/resources/equipment', (req, res) => {
+        fs.readFile(indexPath, 'utf8', (err, htmlData) => {
+            if (err) {
+                console.error('Error during file reading', err);
+                return res.status(404).end()
+            }
+
+            htmlData = htmlData.replace(
+                "<title>Associated Pools Inc</title>",
+                `<title>Equipment Brochures</title>`
+            )
+            .replace('__META_DESCRIPTION__', 'Brouchures for every piece of equipment we install')
+
+            return res.send(htmlData);
+        });
+    })
+    app.get('/resources/stoneandtile', (req, res) => {
+        fs.readFile(indexPath, 'utf8', (err, htmlData) => {
+            if (err) {
+                console.error('Error during file reading', err);
+                return res.status(404).end()
+            }
+
+            htmlData = htmlData.replace(
+                "<title>Associated Pools Inc</title>",
+                `<title>Stone & Tile</title>`
+            )
+            .replace('__META_DESCRIPTION__', 'Take a look at some of the many options for stone and tile we can install')
+
+            return res.send(htmlData);
+        });
+    })
+    app.get('/resources/chemicals', (req, res) => {
+        fs.readFile(indexPath, 'utf8', (err, htmlData) => {
+            if (err) {
+                console.error('Error during file reading', err);
+                return res.status(404).end()
+            }
+
+            htmlData = htmlData.replace(
+                "<title>Associated Pools Inc</title>",
+                `<title>Chemical MSDS</title>`
+            )
+            .replace('__META_DESCRIPTION__', 'Chemical Saftey Data sheets available for download')
+
+            return res.send(htmlData);
+        });
+    })
+    app.get('/contact', (req, res) => {
+        fs.readFile(indexPath, 'utf8', (err, htmlData) => {
+            if (err) {
+                console.error('Error during file reading', err);
+                return res.status(404).end()
+            }
+
+            htmlData = htmlData.replace(
+                "<title>Associated Pools Inc</title>",
+                `<title>Contact Us!</title>`
+            )
+            .replace('__META_DESCRIPTION__', 'Give us a shout to talk to someone about how to make your outdoor dreams a reality!')
+
+            return res.send(htmlData);
+        });
     })
 }
 
@@ -201,4 +379,4 @@ async function getUsersByGender() {
     return response.rows[0]
 }
 
-module.exports = { getGoogleReviews, handleMeta, getUsersByDateThirty, getUsersByDateYear, getUsersByCity, getUsersByCountry, getUsersByAge, getUsersByGender }
+module.exports = { handleMeta, getUsersByDateThirty, getUsersByDateYear, getUsersByCity, getUsersByCountry, getUsersByAge, getUsersByGender }

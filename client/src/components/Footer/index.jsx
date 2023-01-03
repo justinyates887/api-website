@@ -41,7 +41,7 @@ export function Footer (props){
                         </tr>
                         <tr>
                             <td>Sat:</td>
-                            <td>8am - 3pm</td>
+                            <td>Appointment Only</td>
                         </tr>
                         <tr>
                             <td>Sun:</td>

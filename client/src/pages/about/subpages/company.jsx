@@ -45,7 +45,10 @@ export function Company({ History }) {
                             <path d="M8 0a.5.5 0 0 1 .473.337L9.046 2H14a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-1.85l1.323 3.837a.5.5 0 1 1-.946.326L11.092 11H8.5v3a.5.5 0 0 1-1 0v-3H4.908l-1.435 4.163a.5.5 0 1 1-.946-.326L3.85 11H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h4.954L7.527.337A.5.5 0 0 1 8 0zM2 3v7h12V3H2z"/>
                           </svg>'
                             title=' Designers'
-                            text='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+                            text='
+                            With our state of the art, VIP 3D design studio, you will get to see a live walkthrough of your project before it even
+                            begins. The free design includes a full preview of your project and your home, insuring every detail is exactly how you pictured.
+                            '
                             />
                           <InfoCard
                             background='bg-light text-dark'
@@ -55,7 +58,10 @@ export function Company({ History }) {
                             </svg>'
                             title=' Who We Are'
                             button={['/services/residential', 'Gallery', 'btn bg-mutedBlue text-light']}
-                            text='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+                            text='
+                            Associated Pools Inc. is a localy owned, family oriented business striving to create the perfect outdoor living space
+                            for you and your family. We take pride in our work, and will produce only the finest quality swimming pools for you to enjoy.
+                            '
                             />
                           <InfoCard
                             background='bg-mutedBlue text-light'
@@ -63,7 +69,11 @@ export function Company({ History }) {
                             <path d="M9.972 2.508a.5.5 0 0 0-.16-.556l-.178-.129a5.009 5.009 0 0 0-2.076-.783C6.215.862 4.504 1.229 2.84 3.133H1.786a.5.5 0 0 0-.354.147L.146 4.567a.5.5 0 0 0 0 .706l2.571 2.579a.5.5 0 0 0 .708 0l1.286-1.29a.5.5 0 0 0 .146-.353V5.57l8.387 8.873A.5.5 0 0 0 14 14.5l1.5-1.5a.5.5 0 0 0 .017-.689l-9.129-8.63c.747-.456 1.772-.839 3.112-.839a.5.5 0 0 0 .472-.334z"/>
                             </svg>'
                             title=' Hard Work'
-                            text='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+                            text='
+                            We are no strangers to getting down and dirty. Our owner, Bryan, knows what it is like to work in the trenches.
+                            Working his way up from a laborer, he knows what to do to get the job done in a timely manner. Our team of qualified
+                            builders are no exception.
+                            '
                             />
                         </div>
 
@@ -74,7 +84,10 @@ export function Company({ History }) {
                             <path d="M7.5 1.018a7 7 0 0 0-4.79 11.566L7.5 7.793V1.018zm1 0v6.775l4.79 4.79A7 7 0 0 0 8.5 1.018zm4.084 12.273L8.5 9.207v5.775a6.97 6.97 0 0 0 4.084-1.691zM7.5 14.982V9.207l-4.084 4.084A6.97 6.97 0 0 0 7.5 14.982zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z"/>
                             </svg>'
                             title='Ethics'
-                            text='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+                            text='
+                            Contractors get a bad rap. We strive to change the way people view contracting by providing a strong code of ethics.
+                            It is our firm belief that the customers wants and needs are above all else, and we will work to ensure your needs are met.
+                            '
                           />
                           <InfoCard 
                             background='bg-mutedBlue text-light'
@@ -82,7 +95,10 @@ export function Company({ History }) {
                             <path fill-rule="evenodd" d="M11.5 1.246c.832-.855 2.913.642 0 2.566-2.913-1.924-.832-3.421 0-2.566ZM9 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm-9 8c0 1 1 1 1 1h10s1 0 1-1-1-4-6-4-6 3-6 4Zm13.5-8.09c1.387-1.425 4.855 1.07 0 4.277-4.854-3.207-1.387-5.702 0-4.276ZM15 2.165c.555-.57 1.942.428 0 1.711-1.942-1.283-.555-2.281 0-1.71Z"/>
                             </svg>'
                             title='Family'
-                            text='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+                            text='
+                            We have a long record of tradition here. From our founder, Ron Kitterer, Associated Pools was handed down to his forman, Mark Polivka.
+                            When Mark retired, he handed it down to his foreman, and current owner, Bryan Yates. 
+                            '
                           />
                           <InfoCard 
                             background='bg-lightBlue text-dark'
@@ -90,7 +106,10 @@ export function Company({ History }) {
                             <path fill-rule="evenodd" d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721L8 2.42Zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063.045.041.089.084.132.129.043-.045.087-.088.132-.129 3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3.177 3.177 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398Z"/>
                             </svg>'
                             title='Customer Oriented'
-                            text='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+                            text='
+                            The two things that make this business possible are our customers and our team. We cherish the opportunity to build the space
+                            of your dreams, and respect the investment you are making. A customer-first attitude is one we will always carry.
+                            '
                           />
                         </div>
                       </div>

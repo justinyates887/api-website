@@ -1,8 +1,6 @@
 import React from "react";
 import VisibilitySensor from "react-visibility-sensor";
 import { NavHeader, Footer, Loading, ProfileCard } from "../../../components";
-import Team from '../../../assets/img/team.webp'
-import Friendly from '../../../assets/img/friendly.jpg'
 
 export function People({ History }) {
 
@@ -21,16 +19,16 @@ export function People({ History }) {
             <NavHeader />
 
               <div className="img-wrapper">
-                  <img src={ Team } className="img-responsive" alt="Group of team members"></img>
+                  <img src='https://ik.imagekit.io/associatedpoolsinc/API/new_0Bcu3wR09.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672682888145' className="img-responsive" alt="Group of team members"></img>
               </div>
 
-              <div className="img-overlay title center">
+              <div className="people-img-overlay center">
                 <div className="" style={{width: '95%'}}>
                     <div>
                         <div className="row">
                             <div className="card-body">
-                                <h1 className="card-title text-light">A Company Is Only <br /> As Good As Its People</h1>
-                                <h4 className="card-text text-light mt-3">
+                                <h1 className="card-title-head text-light">A Company Is Only <br /> As Good As Its People</h1>
+                                <h4 className="card-text-head text-light mt-3">
                                     Our company must be pretty good then...
                                 </h4>
                             </div>
@@ -44,6 +42,7 @@ export function People({ History }) {
                 </div>
               </div>
 
+               <div className ='center'>
                <ul className="timeline">
                <li>
                     <VisibilitySensor>
@@ -52,7 +51,11 @@ export function People({ History }) {
                                 isVisible={isVisible}
                                 imgSrc='https://ik.imagekit.io/associatedpoolsinc/API/bryan_-Wnqwgae7l8U.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1646404644753'
                                 name='Bryan Yates'
-                                text='Owner of Associated Pools Inc. 30+ Years of expierience in pool world. Mega poggers.'
+                                text='
+                                Current owner of Associated Pools Inc. With over 30 years over experience in bulding, designing, and maintaining
+                                swimming pools, Bryan has made it his mission to provide the best possible swimming pool products to the Kansas 
+                                City Metro.
+                                '
                               />
                             )}
                     </VisibilitySensor>
@@ -61,59 +64,15 @@ export function People({ History }) {
                     <li>
                     <VisibilitySensor>
                             {({ isVisible }) => (
-                                <div className="card center" style={{minWidth: '50%'}}>
-                                    <div className={isVisible ? "row d-flex justify-content-center fade-in appear" : "row d-flex justify-content-center fade-in"}>
-                                        <div className="row m-0 p-0 justify-content-start align-items-center"> 
-                                          <div className="col-2">
-                                            <img className="profile-pic" src="https://i.imgur.com/6tPhTUn.jpg" alt="Employee Mark Polivka"/>
-                                          </div>
-                                          <div className="col-6">
-                                            <h3 className="mb-0 font-weight-normal">Mark Polivka</h3> 
-                                          </div>
-                                        </div>
-                                        <div className="row px-3"> 
-                                        <p className="text-muted bg-light mt-4 mb-3">
-                                            Lorem Ipsum some text about these guys, their interests, and what they do for the company.
-                                        </p> 
-                                        </div>
-                                    </div>
-                                </div>
-                            )}
-                        </VisibilitySensor>
-                    </li>
-
-                    <li>
-                    <VisibilitySensor>
-                            {({ isVisible }) => (
-                                <div className="card center" style={{minWidth: '50%'}}>
-                                    <div className={isVisible ? "row d-flex justify-content-center fade-in appear" : "row d-flex justify-content-center fade-in"}>
-                                        <div className="row m-0 p-0 justify-content-start align-items-center"> 
-                                          <div className="col-2">
-                                            <img className="profile-pic" src="https://i.imgur.com/6tPhTUn.jpg" alt="Employee Justin Yates"/>
-                                          </div>
-                                          <div className="col-6">
-                                            <h3 className="mb-0 font-weight-normal">Justin Yates</h3> 
-                                          </div>
-                                        </div>
-                                        <div className="row px-3"> 
-                                        <p className="text-muted bg-light mt-4 mb-3">
-                                            Lorem Ipsum some text about these guys, their interests, and what they do for the company.
-                                        </p> 
-                                        </div>
-                                    </div>
-                                </div>
-                            )}
-                        </VisibilitySensor>
-                    </li>
-
-                    <li>
-                    <VisibilitySensor>
-                            {({ isVisible }) => (
                               <ProfileCard 
                                 isVisible={isVisible}
-                                imgSrc='https://ik.imagekit.io/associatedpoolsinc/API/dom_JKX8s9t7tZx.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1646404644561'
-                                name='Dominik Macias'
-                                text='Masonry foreman. Puts tile and coping on. Mega hard worker, but super short.'
+                                imgSrc='https://ik.imagekit.io/associatedpoolsinc/API/bryan_-Wnqwgae7l8U.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1646404644753'
+                                name='Mark Polivka'
+                                text='
+                                Former owner of Associated Pools, Mark spent over 20 years growing the company and its reputation to what it is today.
+                                After retiring, Mark decidied to hand down the legacy of Associated Pools to its current owner, Bryan Yates. Mark still
+                                serves as a consultant and Vice President of the company.
+                                '
                               />
                             )}
                         </VisibilitySensor>
@@ -124,10 +83,13 @@ export function People({ History }) {
                             {({ isVisible }) => (
                               <ProfileCard 
                                 isVisible={isVisible}
-                                imgSrc='https://ik.imagekit.io/associatedpoolsinc/API/mitch_-lNzYScDZHf.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1646404644532'
-                                name='Mitchell Bomberger'
-                                text='Form and Steel foreman. Likes anime. Hates doing Monday saftey briefings.'
-                            />
+                                imgSrc='https://ik.imagekit.io/associatedpoolsinc/API/justin_ppff6105m.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1672767652139'
+                                name='Justin Yates'
+                                text='
+                                Current Business Administrator for the company, and son to Bryan. Justin handles most phone calls, e-mails,
+                                invoicing, and general office managment for the company. 
+                                '
+                              />
                             )}
                         </VisibilitySensor>
                     </li>
@@ -139,7 +101,8 @@ export function People({ History }) {
                                 isVisible={isVisible}
                                 imgSrc='https://ik.imagekit.io/associatedpoolsinc/API/andrew_lpQ5zCOp9a.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1646404644048'
                                 name='Andrew Barth'
-                                text='Excavation foreman. Likes being on his phone a lot. Digs really big holes.'
+                                text='General Foreman for Associated Pools. You will get to see a lot of Andrew, as he is in charge of overseeing
+                                every phase of the project. Andrew is a polite, knowledgeable, and tenured employee.'
                               />
                             )}
                         </VisibilitySensor>
@@ -151,13 +114,31 @@ export function People({ History }) {
                               <ProfileCard 
                                 isVisible={isVisible}
                                 imgSrc='https://ik.imagekit.io/associatedpoolsinc/API/chase_lQv_-9w02Pe.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1646404644432'
-                                name='Chase Wilke'
-                                text='Service Manager. Does not like cockroaches. Cleans pools like a madman.'
+                                name='Logan Kennicut'
+                                text='Logan is in charge of all things pool chemicals and equipment. He will be responsible for installing new equipment, 
+                                replacing old equipment, or chemically balancing and cleaning your pool. Logan has significant knowledge of pool chemistry.'
+                            />
+                            )}
+                        </VisibilitySensor>
+                    </li>
+
+                    <li>
+                    <VisibilitySensor>
+                            {({ isVisible }) => (
+                              <ProfileCard 
+                                isVisible={isVisible}
+                                imgSrc='https://ik.imagekit.io/associatedpoolsinc/API/chase_lQv_-9w02Pe.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1646404644432'
+                                name='Shawn Kays'
+                                text='
+                                Shawn, though not directly a part of Associated Pools, is in charge of running our sister company, Associated Concrete Inc.
+                                Shawn will be responsible for handling the concrete decking for new swimming pool projects.
+                                '
                             />
                             )}
                         </VisibilitySensor>
                     </li>
                </ul>
+               </div>
 
 
                       <div className="card center mb-4 mt-4" style={{minWidth: '97%'}}>
@@ -170,12 +151,22 @@ export function People({ History }) {
                                     is exactly how you dreamed. 
                                     <br />
                                     <br />
-                                    More text about the team and what customers can expect form them/us. Maybe a little quote about the guys from a customer.
+                                    Our team at Associated Pools Inc is dedicated to providing the best possible service to our customers. We are a diverse group of individuals with a wide range of skills and expertise, and we are all committed to delivering high-quality products and services that meet the needs and exceed the expectations of our customers.
+                                    When you work with us, you can expect:
+                                    <br />
+                                    <ul id="people">
+                                      <li><strong>Professionalism:</strong> Our team members are knowledgeable, courteous, and dedicated to providing excellent service. We take pride in our work and are always striving to improve.</li>
+                                      <li><strong>Responsiveness:</strong> We understand that our customers' time is valuable, and we make it a priority to respond to inquiries and requests in a timely manner.</li>
+                                      <li><strong>Flexibility:</strong> We know that every customer is unique, and we are willing to work with you to find solutions that meet your specific needs and requirements.</li>
+                                      <li><strong>Quality:</strong> We are committed to delivering products and services that are of the highest caliber. We use only the best materials and processes to ensure that our customers receive the best value for their money.</li>
+                                    </ul>
+                                    Thank you for choosing Associated Pools Inc. We look forward to working with you!
                                 </p>
                             </div>
                             </div>
                             <div className="col-sm">
-                              <img src={ Friendly } alt="Group of employees standing together." height='100%' width="80%"></img>
+                              <img src='https://ik.imagekit.io/associatedpoolsinc/API/pexels-dio-hasbi-saniskoro-3280130_upTsnsaiQ.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1672677412309' 
+                              alt="Group of employees with hands in the middle." height='100%' width="80%"></img>
                             </div>
                           </div>
                       </div>

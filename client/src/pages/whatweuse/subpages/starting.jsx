@@ -33,7 +33,7 @@ export function Starting() {
         <SwiperSlide>
             <div className="container mt-5" id="starting">
             <div className="lg-container">
-                <img className="lg-image"
+                <img className="lg-image" alt="Equipment pad"
                 src="https://ik.imagekit.io/associatedpoolsinc/API/IMG_0865.HEIC_YkTCC_MfM_KhVogF137ev.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1646664038334" />
 
                 <div style={{top: "22.5%", left: "25.5%"}} className="lg-hotspot lg-hotspot--top-left">
@@ -102,7 +102,7 @@ export function Starting() {
         <SwiperSlide>
             <div className="container mt-5" id="starting">
             <div className="lg-container">
-                <img className="lg-image"
+                <img className="lg-image" alt="Swimming pool at night"
                 src="https://ik.imagekit.io/associatedpoolsinc/API/download_z8OweNfo3p.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1646749284392" />
 
                 <div style={{top: "81%", left: "25.5%"}} className="lg-hotspot lg-hotspot--top-left">

@@ -32,6 +32,15 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+
+#header {
+  background-image: url("https://ik.imagekit.io/associatedpoolsinc/API/map_-NtT0wS77.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1643979899713");
+  background-size:cover;
+  text-align: center;
+  padding: 8%;
+  margin-bottom: 20px;
+}
+
 .bi-star-fill {
   fill: #FFCE44;
 }
@@ -152,6 +161,14 @@ background: rgba(255, 255, 255, 0.4);
 }
 
 /*-----------------------------------------------------------------*/
+.accordion-button{
+  font-size: x-large;
+  color: #0073de;
+}
+
+.accordion-body{
+  font-size: large;
+}
 
 .img-wrapper {
   position: relative;
@@ -168,6 +185,30 @@ background: rgba(255, 255, 255, 0.4);
   width: 100%;
 }
 
+.home-img-overlay {
+  position: absolute;
+  align-items: center;
+  top: 15rem;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.people-img-overlay {
+  position: absolute;
+  align-items: center;
+  top: 10rem;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .img-overlay {
   position: absolute;
   align-items: center;
@@ -179,6 +220,7 @@ background: rgba(255, 255, 255, 0.4);
   margin-left: auto;
   margin-right: auto;
 }
+
 
 .img-overlay:before {
   display: block;
@@ -298,7 +340,16 @@ background: rgba(255, 255, 255, 0.4);
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  object-fit: contain;
+  object-fit: cover;
+  background-color: #E0E0E0
+}
+
+.img-round {
+  display: block;
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  object-fit: cover;
   background-color: #E0E0E0
 }
 
@@ -306,7 +357,7 @@ background: rgba(255, 255, 255, 0.4);
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  object-fit: contain;
+  object-fit: cover;
   background-color: #E0E0E0
 }
 
@@ -315,6 +366,7 @@ ul.timeline {
   list-style-type: none;
   position: relative;
   margin-left: 10%;
+  margin-right: 15%;
 }
 ul.timeline:before {
   content: ' ';
@@ -396,6 +448,36 @@ ul.timeline > li:before {
   font-size: 1.65em;
 }
 
+.card-title-head {
+  font-size: 60px;
+}
+
+.card-text-head {
+  font-size: 40px;
+}
+
 .resource-card:hover {
   outline: #0073de solid 3px;
+}
+
+#people{
+  padding: 3rem;
+  list-style: none;
+}
+
+#people li{
+  margin-top: 5px;
+}
+
+.before {
+  text-align: center;
+  margin: 40px;
+}
+
+.policy{
+  background-image: url("https://ik.imagekit.io/associatedpoolsinc/API/map_-NtT0wS77.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1643979899713");
+  background-size:cover;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
 }

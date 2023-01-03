@@ -8,8 +8,7 @@ export function SubPageNav({ Props }){
             <nav class="nav nav-tabs position-absolute start-50 translate-middle mt-4">
                 <a href="/resources/equipment" className="nav-item nav-link">Equipment</a>
                 <a href="/resources/stoneandtile" className="nav-item nav-link">Stone & Tile</a>
-                <a href="#" className="nav-item nav-link">Extras</a>
-                <a href="#" className="nav-item nav-link" tabindex="-1">Reports</a>
+                <a href="/resources/chemicals" className="nav-item nav-link">Chemical MSDS</a>
             </nav>
         </div>
         </>

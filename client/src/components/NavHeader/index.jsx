@@ -25,7 +25,6 @@ export function NavHeader(){
                         <ul className="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
                         <li><a className="dropdown-item" href="/about/company">The Company</a></li>
                         <li><a className="dropdown-item" href="/about/people">The People</a></li>
-                        <li><a className="dropdown-item" href="/about/mission">The Mission</a></li>
                         </ul>
                     </li>
                     <li className="nav-item dropdown">
@@ -58,7 +57,7 @@ export function NavHeader(){
                         <ul className="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
                         <li><a className="dropdown-item" href="/resources/equipment">Equipment</a></li>
                         <li><a className="dropdown-item" href="/resources/stoneandtile">Stone & Tile</a></li>
-                        <li><a className="dropdown-item" href="/services/service">Service</a></li>
+                        <li><a className="dropdown-item" href="/resources/chemicals">Chemical MSDS</a></li>
                         </ul>
                     </li>
                     <li className="nav-item">
@@ -67,13 +66,10 @@ export function NavHeader(){
                     </ul>
                     <div className='row position-absolute bottom-0 start-50 translate-middle'>
                         <div className='col'>
-                            <a href='/privacy'>Privacy</a>
+                            <a href='/policies/privacy'>Privacy</a>
                         </div>
                         <div className='col'>
-                            <a href='/cookies'>Cookies</a>
-                        </div>
-                        <div className='col'>
-                            <a href='/admin'>Admin</a>
+                            <a href='/policies/cookies'>Cookies</a>
                         </div>
                     </div>
                 </div>

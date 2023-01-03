@@ -1,6 +1,6 @@
 import React from "react";
-import { NavHeader, Footer, Loading, useForm, StarRating } from "../../components";
-import { getGoogleReviews, sendMail } from "../../utils/api";
+import { NavHeader, Footer, useForm } from "../../components";
+import { sendMail } from "../../utils/api";
 
 import ReCaptchaV2 from 'react-google-recaptcha'
 
@@ -18,17 +18,6 @@ const initialFieldValues = {
 }
 
 export function Contact( props ) {
-    
-    const [loading, setLoading] = React.useState(true);
-    const [reviews, setReviews] = React.useState([])
-
-    React.useEffect( () => {
-        getGoogleReviews()
-        .then(( { data } ) => {
-            setReviews(data.reviews)
-        })
-        setLoading(false);
-    }, [])
 
     const validate = () => {
         let temp = {}
@@ -73,14 +62,9 @@ export function Contact( props ) {
         if(values.token != null) sendMail(values)
         else window.alert("Please complete Recaptcha to submit")
     }
-    
-    const mapReviews = Object.entries(reviews)
 
     return (
         <div id="contact">
-        {loading ? (
-            <Loading />
-        ) : (
             <div>
             <NavHeader />
 
@@ -272,59 +256,12 @@ export function Contact( props ) {
                                 </div>
                             </form>
                         </div>
-                        <div className="row mt-4">
-                            <div className="col ms-4">
-                                <h5 className="card-title">Still In Doubt?</h5>
-                                <h6 className="card-subtitle mb-4 text-muted">Hear What Our Customers Have To Say</h6>
-                            </div>
-                            <div className="scroll-area-sm">
-                                <div className="row">
-                                    <div id="google-reviews">
-                                        { 
-                                        mapReviews.map((review) => {
-                                            return (
-                                                <div className="card m-4" style={{width: '90%'}} key={review[1].author_name}>
-                                                    <div className="card-body">
-                                                        <div className="row m-0 mb-2 p-0 justify-content-start align-items-center">
-                                                          <div className="col-2">
-                                                              <img className="review-pic" src={review[1].profile_photo_url} alt="reviewer"/>
-                                                          </div>
-                                                          <div className="col-6">
-                                                            <h5 className="card-title">{`${review[1].author_name}`}</h5>
-                                                          </div>
-                                                        </div>
-                                                        <div className="row mb-2">
-                                                            <div className="col mt-2">
-                                                                <StarRating params={review[1].rating} />
-                                                            </div>
-                                                        </div>
-                                                        <div className="row">
-                                                            <div className="col mt-2">
-                                                                <p className="text-secondary text-start">{review[1].relative_time_description}</p>
-                                                            </div>
-                                                        </div>
-                                                        <div className="row">
-                                                          <div className="col">
-                                                            <p className="card-text">{`${review[1].text}`}</p>
-                                                          </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                )
-                                            })
-                                        }
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
                 </div>
-
             <Footer />
             </div>
-        )}
+        
         </div>
     )
 }

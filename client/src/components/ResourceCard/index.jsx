@@ -5,7 +5,7 @@ export function ResourceCard(props) {
         <>
            <div class="card resource-card" style={{width: '18rem'}}>
                 <a href={props.link}
-                        target="_blank">
+                        target="_blank" rel="noreferrer">
                         <img src={props.image} class="card-img-top" alt="" />
                         <div class="card-body">
                             <p class="card-text">{props.text}</p>
