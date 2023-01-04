@@ -259,7 +259,14 @@ export function Contact( props ) {
                     </div>
                 </div>
                 </div>
-            <Footer />
+            <Footer 
+                title="Get In Touch"
+                text="Thank you for considering ABC Swimming Pool Contractors for your pool needs. We are always 
+                    available to answer any questions or concerns you may have. Whether you are interested in our 
+                    design and construction services or just need some advice on pool maintenance, we are here to 
+                    help. Contact us today and a member of our team will be in touch with you shortly. We look 
+                    forward to working with you!"
+            />
             </div>
         
         </div>

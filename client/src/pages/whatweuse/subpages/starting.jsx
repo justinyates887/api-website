@@ -163,14 +163,19 @@ export function Starting() {
                 </div>
                 </div>
 
-
             </div>
             </div>
         </SwiperSlide>
 
         </Swiper>
 
-        <Footer />
+        <Footer 
+            title="Only the Brands You Trust"
+            text="At ABC Swimming Pool Contractors, we believe in using the best products to ensure the best results. 
+                That's why we only use Pentair products for our clients' swimming pools. Pentair is a leading manufacturer 
+                of high-quality pool and spa equipment, known for their innovative and reliable products. By choosing 
+                Pentair, we can guarantee that your pool is getting the best treatment and maintenance possible."
+        />
         </>
     )
 }

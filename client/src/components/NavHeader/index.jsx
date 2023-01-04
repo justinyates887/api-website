@@ -46,7 +46,7 @@ export function NavHeader(){
                         </a>
                         <ul className="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
                         <li><a className="dropdown-item" href="/about/starting">Starting Equipment</a></li>
-                        <li><a className="dropdown-item" href="/about/pentair">Why Pentair?</a></li>
+                        {/*<li><a className="dropdown-item" href="/about/pentair">Why Pentair?</a></li>*/}
                         <li><a className="dropdown-item" href="/about/chemicals">Chemicals</a></li>
                         </ul>
                     </li>

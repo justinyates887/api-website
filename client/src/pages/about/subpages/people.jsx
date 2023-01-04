@@ -172,7 +172,13 @@ export function People({ History }) {
                       </div>
 
 
-            <Footer />
+            <Footer 
+              title='The Best in the Business'
+              text='Meet the team at Associated Pools Inc! Our talented and dedicated staff has years of experience in the swimming pool 
+                industry. From design to construction, each member of our team plays an important role in creating the perfect pool for your home 
+                or commercial property. We are proud to have such a skilled and hardworking team, and we believe it shows in the quality of our work. 
+                Thank you for choosing Associated Pools Inc!'
+            />
             </>
         )}
         </>

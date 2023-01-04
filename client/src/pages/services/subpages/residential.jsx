@@ -166,7 +166,11 @@ export function Residential() {
                 />
 
             </VerticalTimeline>
-            <Footer />
+            <Footer 
+                title='It Can be Complicated'
+                text="No one expects you to be an expert in pool building. After all, that's why were here! We try to make the process as easy to understand as
+                possible. If you have any questions about the pool building process, give us a call! We would be happy to answer anything you can come up with."
+            />
         </>
     )
 }

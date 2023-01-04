@@ -24,10 +24,10 @@ export function Footer (props){
                         <a href="/services/residential" style={{color: '#f8f9fa'}}>Residential</a>
                         </li>
                         <li className="mb-1">
-                        <a href="#!" style={{color: '#f8f9fa'}}>Commercial</a>
+                        <a href="/services/commercial" style={{color: '#f8f9fa'}}>Commercial</a>
                         </li>
                         <li>
-                        <a href="#!" style={{color: '#f8f9fa'}}>Service</a>
+                        <a href="/services/service" style={{color: '#f8f9fa'}}>Service</a>
                         </li>
                     </ul>
                     </div>

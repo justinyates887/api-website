@@ -117,7 +117,15 @@ export function Company({ History }) {
                     )}
                 </VisibilitySensor>
 
-              <Footer className="mt-auto"/>
+              <Footer 
+                className="mt-auto"
+                title="A Company That Cares"
+                text="At Associated Pools Inc, we are passionate about creating beautiful and functional 
+                  swimming pools for our clients. Our team of experienced professionals has been serving the community 
+                  for over 40 years, providing top-quality design and construction services. We take pride in our 
+                  attention to detail and customer satisfaction, and strive to make the pool building process as 
+                  seamless as possible. Thank you for considering us for your pool project!"
+              />
             </>
         )}
         </>

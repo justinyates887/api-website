@@ -221,7 +221,13 @@ export function Service({ History }) {
 
                     </div>
 
-              <Footer className="mt-auto"/>
+              <Footer className="mt-auto"
+                title="Let Us Do The Dirty Job"
+                text="At Associated Pools Inc, we offer a full range of swimming pool services to meet all of your needs. 
+                    From design and construction to maintenance and repair, our team has the expertise to handle it all. We are 
+                    committed to providing top-quality service and ensuring that your pool is always in top condition. Contact us 
+                    today to learn more about our services and how we can help you with your swimming pool needs."
+              />
             </>
         )}
         </>

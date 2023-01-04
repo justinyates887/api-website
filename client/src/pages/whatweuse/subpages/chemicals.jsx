@@ -215,7 +215,14 @@ export function Chemicals(){
             </VerticalTimelineElement>
 
         </VerticalTimeline>
-        <Footer />
+        <Footer 
+            title="Take The Guesswork Away"
+            text="At Associated Pools Inc, we understand the importance of using high-quality chemicals to 
+                maintain a safe and clean swimming pool. Our team is knowledgeable about the various chemicals used 
+                in pool maintenance and can help you choose the right products for your specific needs. Keep your 
+                pool water balanced and crystal clear with our selection of trusted chemical brands. Contact us today 
+                to learn more about our chemical options and how they can benefit your pool."
+        />
         </>
     )
 }

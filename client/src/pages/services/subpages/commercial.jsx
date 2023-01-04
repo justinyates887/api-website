@@ -55,7 +55,14 @@ export function Commercial() {
             </div>
         </div>
 
-        <Footer />     
+        <Footer 
+            title="We Let Our Reputation Speak for Itself"
+            text="As a commercial contractor, you know that partnering with the right subcontractors is essential to the 
+                success of any project. At Associated Pools Inc, we pride ourselves on being reliable, efficient, 
+                and professional. With over 40 years of experience in the industry, we have the knowledge and expertise 
+                to deliver top-quality results on every job. Our team is dedicated to meeting deadlines and exceeding our 
+                clients' expectations, so you can trust that your project will be in good hands with us."
+        />     
         </>
     )
 }
