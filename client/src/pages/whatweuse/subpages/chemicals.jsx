@@ -82,7 +82,7 @@ export function Chemicals(){
                 className="vertical-timeline-element--education"
                 date="Oxidizers"
             >
-                <h3 className="vertical-timeline-element-title">Calcium Hypochlorite:</h3>
+                <h3 className="vertical-timeline-element-title">Chlorine-Free Shock</h3>
                 <p>
                     Besides the obvious lack of chlorine, chlorine-free shock differs slightly from chlorinated shock. 
                     Also called potassium monopersulfate, oxone, or potassium peroxymonosulfate, chlorine-free shock 
