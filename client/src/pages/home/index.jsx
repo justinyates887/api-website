@@ -31,18 +31,30 @@ export function Home({ History }) {
                                 <h1 className="d-inline h1" style={{fontSize: "4vw"}}>Associated Pools Inc.</h1>
                                 <h2 className="card-title mt-5 mb-3"style={{fontSize: "2vw"}}>Crafting your pools since 1984</h2>
                                 <h5 className="card-text mb-5" style={{fontSize: "1vw"}}>Over 30 years of designing and creating your dream outdoor living space.</h5>
-                                <a href="/services/resedential" className="btn btn-primary">Get Inspired</a>
+                                <a href="/services/resedential" className="button mt-5">
+                                    <span>Get Inspired</span>
+                                    <i></i>
+                                </a>
                         </div>
                         </div>
                     </div>
                     <CookieConsent
                         location="bottom"
                         buttonText="Agree"
-                        style={{ background: "#2d4957", textAlign: "center" }}
+                        style={{ background: "#0073de", textAlign: "center" }}
                         buttonStyle={{ background: "#bfd8fa", fontSize: "13px" }}
                         expires={150}
                     >
                         This website uses only necessary cookies. We do not track or sell <strong>ANY</strong> personal data.
+                    </CookieConsent>
+                    <CookieConsent
+                        location="bottom"
+                        buttonText="Okay"
+                        style={{ background: "gray", textAlign: "center" }}
+                        buttonStyle={{ background: "#bfd8fa", fontSize: "13px" }}
+                        expires={150}
+                    >
+                        For the best experience, please view on a full-size browser.
                     </CookieConsent>
                 </div>
 

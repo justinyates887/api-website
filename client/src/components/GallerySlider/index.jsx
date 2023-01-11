@@ -35,11 +35,36 @@ export function GallerySlider( props ){
                     <SwiperSlide key={i}>
                         <div className="container-general">
                             <div className={`gallery-wrap wrap-effect`}>
-                                <div className="item" style={{backgroundImage: `url(${CDN + props.props[count]})`}}/>
-                                <div className="item" style={{backgroundImage: `url(${CDN + props.props[count + 1]})`}}/>
-                                <div className="item" style={{backgroundImage: `url(${CDN + props.props[count + 2]})`}}/>
-                                <div className="item" style={{backgroundImage: `url(${CDN + props.props[count + 3]})`}}/>
-                                <div className="item" style={{backgroundImage: `url(${CDN + props.props[count + 4]})`}}/>
+                                <div className="item wp-caption" style={{backgroundImage: `url(${CDN + props.props[count]})`}}>
+                                    { props.text ? 
+                                        <div className="wp-caption-text">{props.text[count]}</div>
+                                        : null                                                       
+                                    }
+                                </div>
+                                <div className="item wp-caption" style={{backgroundImage: `url(${CDN + props.props[count + 1]})`}}>
+                                    { props.text ? 
+                                        <div className="wp-caption-text">{props.text[count + 1]}</div>
+                                        : null                                                       
+                                    }
+                                </div>
+                                <div className="item wp-caption" style={{backgroundImage: `url(${CDN + props.props[count + 2]})`}}>
+                                    { props.text ? 
+                                        <div className="wp-caption-text">{props.text[count + 2]}</div>
+                                        : null                                                       
+                                    }
+                                </div>
+                                <div className="item wp-caption" style={{backgroundImage: `url(${CDN + props.props[count + 3]})`}}>
+                                    { props.text ? 
+                                        <div className="wp-caption-text">{props.text[count + 3]}</div>
+                                        : null                                                       
+                                    }
+                                </div>
+                                <div className="item wp-caption" style={{backgroundImage: `url(${CDN + props.props[count + 4]})`}}>
+                                    { props.text ? 
+                                        <div className="wp-caption-text">{props.text[count + 4]}</div>
+                                        : null                                                       
+                                    }
+                                </div>
                             </div>
                         </div>
                     </SwiperSlide>

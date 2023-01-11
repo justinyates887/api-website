@@ -3,7 +3,7 @@ import React from "react";
 export function Footer (props){
     return(
         <>
-            <footer className="footer mt-0 p=0">
+            <footer className="footer mt-0 p-0">
 
             <div style={{background: '#868686'}} className=" text-light">
                 <div className="container-fluid p-4">

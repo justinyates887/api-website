@@ -27,31 +27,40 @@ export function Commercial() {
                     <div className="row">
                         <div className="col">
                             <h4>
-                                Chris Ashner
+                                Lee Curry
                             </h4>
                             <p>
-                                A sample quote from Chris Ashner, descripbing our work ethic, build quality, and communication.
+                                Associated Pools just completed the construction of my pool.  Bryan was very responsive and, if I had issues, addressed them.  
+                                His crew were also respectful and nice.  They are also doing the maintenance on the pool and I am pleased with the service.  
+                                I am a new to owning a pool and Bryan has been responsive to all of my questions and/or concerns.
                             </p>
                         </div>
                         <div className="col">
                             <h4>
-                                Chris Ashner
+                                R.E. Osborn
                             </h4>
                             <p>
-                                A sample quote from Chris Ashner, descripbing our work ethic, build quality, and communication.
+                                Associated Pools has built 4 commercial pools for my company.  We will not work with any other pool contractor.  
+                                Before meeting Bryan and Mark with Associated, we had dreadful experiences with pool contractors.  
+                                Associated's work is exceptional at a very reasonable price; however, you should hire them solely based on their 
+                                experience and expertise.  You DO NOT want a poorly constructed pool...most often, they're impossible to appropriately fix.
                             </p>
                         </div>
                         <div className="col">
                             <h4>
-                                Chris Ashner
+                                Wilshire South
                             </h4>
                             <p>
-                                A sample quote from Chris Ashner, descripbing our work ethic, build quality, and communication.
+                                Our subdivision has used Associated Pools for 20 years.  We appreciate them doing everything needed to keep our residents 
+                                happy and making it easy on our HOA Board by being responsive, professional and handling the littlest of details.
                             </p>
                         </div>
                     </div>
                 </p>
-                <a href="tel:9138887946" className="btn btn-primary">Give Us A Call</a>
+                <a href="tel:9138887946" className="button mt-5">
+                    <span>Give Us A Call</span>
+                    <i></i>
+                </a>
             </div>
         </div>
 

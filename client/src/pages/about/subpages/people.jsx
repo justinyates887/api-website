@@ -66,23 +66,6 @@ export function People({ History }) {
                             {({ isVisible }) => (
                               <ProfileCard 
                                 isVisible={isVisible}
-                                imgSrc='https://ik.imagekit.io/associatedpoolsinc/API/bryan_-Wnqwgae7l8U.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1646404644753'
-                                name='Mark Polivka'
-                                text='
-                                Former owner of Associated Pools, Mark spent over 20 years growing the company and its reputation to what it is today.
-                                After retiring, Mark decidied to hand down the legacy of Associated Pools to its current owner, Bryan Yates. Mark still
-                                serves as a consultant and Vice President of the company.
-                                '
-                              />
-                            )}
-                        </VisibilitySensor>
-                    </li>
-
-                    <li>
-                    <VisibilitySensor>
-                            {({ isVisible }) => (
-                              <ProfileCard 
-                                isVisible={isVisible}
                                 imgSrc='https://ik.imagekit.io/associatedpoolsinc/API/justin_ppff6105m.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1672767652139'
                                 name='Justin Yates'
                                 text='
