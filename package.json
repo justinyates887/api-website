@@ -21,7 +21,7 @@
   "bugs": {
     "url": "https://github.com/justinyates887/api-website/issues"
   },
-  "homepage": "https://api-website-yates.onrender.com/api-website",
+  "homepage": "https://api-website-yates.onrender.com",
   "dependencies": {
     "@google-analytics/data": "^2.8.0",
     "cors": "^2.8.5",
