@@ -1,8 +1,6 @@
 import React from "react";
 import VisibilitySensor from "react-visibility-sensor";
 import { NavHeader, Footer, Loading, InfoCard } from "../../../components";
-import Banner from '../../../assets/img/banner-white.webp'
-import PoolOne from '../../../assets/img/pool-one.webp'
 
 export function Company({ History }) {
 
@@ -20,14 +18,14 @@ export function Company({ History }) {
             <NavHeader />
 
                   <div className="img-wrapper">
-                    <img src={ PoolOne } className="img-responsive" alt="Background: A simple backyard pool surrounded by trees."></img>
+                    <img src='https://ik.imagekit.io/associatedpoolsinc/API/map_-NtT0wS77.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1643979899713' className="img-responsive" alt="Background: A simple backyard pool surrounded by trees."></img>
                   </div>
 
                   <div className="container-fluid m-0">
 
                   <div className="row-3 mt-5 img-overlay">
                       <div className="col">
-                        <img src={ Banner } alt="Associated Pools Inc." height='30%' width="50%"></img>
+                        <img src='https://ik.imagekit.io/associatedpoolsinc/API/Website_Banner_Minimal_0Q4cUBlVDsZZ.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1643979900467' alt="Associated Pools Inc." height='30%' width="50%"></img>
                       </div>
                   </div>
 

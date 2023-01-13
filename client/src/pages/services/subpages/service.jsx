@@ -17,14 +17,14 @@ export function Service({ History }) {
             <NavHeader />
 
                   <div className="img-wrapper">
-                    <img src='https://ik.imagekit.io/associatedpoolsinc/API/cleaning_igJl_g9NE.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1672759110695' className="img-responsive" alt="Background: A simple backyard pool surrounded by trees."></img>
+                    <img src='https://ik.imagekit.io/associatedpoolsinc/API/map_-NtT0wS77.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1643979899713' className="img-responsive" alt="Background: A simple backyard pool surrounded by trees."></img>
                   </div>
 
                   <div className="container-fluid m-0">
 
                     <div className="row-3 mt-5 img-overlay">
                         <div className="col">
-                            <img src='https://ik.imagekit.io/associatedpoolsinc/API/banner-white_pnzwaiHBOB.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1643979900504' alt="Associated Pools Inc." height='30%' width="50%"></img>
+                            <img src='https://ik.imagekit.io/associatedpoolsinc/API/Website_Banner_Minimal_0Q4cUBlVDsZZ.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1643979900467' alt="Associated Pools Inc." height='30%' width="50%"></img>
                         </div>
                     </div>
 
@@ -46,7 +46,10 @@ export function Service({ History }) {
                                     <br />
                                     Give us a call today to discuss your needs!
                                 </p>
-                                <a href="tel:9138887946" className="btn btn-primary">Give Us A Call</a>
+                                <a href="tel:9138887946" className="button mt-5" name="Phone Number">
+                                    <span>Call Now</span>
+                                    <i></i>
+                                </a>
                             </div>
                       </div>
 

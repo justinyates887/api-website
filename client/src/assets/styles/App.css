@@ -166,15 +166,16 @@ img {
 
 .button {
   top: auto;
-  margin-left: 16.2vw;
+  margin-left: 50%;
+  margin-right: 50%;
   transform: translate(-50%, -50%);
-  padding: 20px 50px;
+  padding: 2vh 4vw;
   display: inline-flex;
   text-decoration: none;
   text-transform: uppercase;
   overflow: hidden;
   cursor: pointer;
-  font: 16px/24px Arial, sans-serif;
+  font: 16px/20px Arial, sans-serif;
   background-color: #4973ff;
   transition: 
     box-shadow 0.4s ease, 
@@ -191,7 +192,8 @@ img {
 
 .button span {
   color: #fff;
-  letter-spacing: 8px;
+  letter-spacing: 4px;
+  white-space: nowrap;
 }
 
 .button i {
@@ -267,9 +269,13 @@ img {
   font-size: large;
 }
 
+.home-img-wrapper {
+  position: relative;
+  height: 100vh;
+}
+
 .img-wrapper {
   position: relative;
-  height: auto;
 }
 
 .img-responsive {
@@ -280,18 +286,21 @@ img {
 .vid-responsive {
   height: 100%;
   width: 100%;
+  overflow: hidden;
+  object-fit: cover;
 }
 
 .home-img-overlay {
   position: absolute;
   align-items: center;
-  top: 15rem;
+  object-fit: contain;
   bottom: 0%;
   left: 0%;
   right: 0%;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  padding: 10%;
 }
 
 .people-img-overlay {

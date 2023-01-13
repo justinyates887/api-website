@@ -6,24 +6,31 @@ export function Commercial() {
         <>
         <NavHeader />
 
-        <GallerySlider props={['/eOne_CM-_QTwKgp.webp', '/eTwo_YawzE7Kust.webp', '/eThree_t6LSSU8H1.webp', '/eFour_mbSppmutVWn.webp', '/eFive_uEY1l5_3Rv.webp']}/>
+        <GallerySlider props={
+            [
+                '/eOne_CM-_QTwKgp.webp', '/eTwo_YawzE7Kust.webp', '/eThree_t6LSSU8H1.webp', '/eFour_mbSppmutVWn.webp', '/eFive_uEY1l5_3Rv.webp',
+                '/commercial-assets/IMG_0644_TckXA7hnb.webp', '/commercial-assets/IMG_0676_tn2t0sm9E.webp', '/commercial-assets/1__2__dBa2weI46.webp' ,'/commercial-assets/IMG_0671__pB2jW28X.webp', '/commercial-assets/IMG_0536_-1Atig7d-.webp',
+                '/commercial-assets/wil-lake_M0_WNA50x.webp', '/commercial-assets/Picture-044_VWuSe3togB.webp', '/commercial-assets/Picture-057_yaJJUFEa_1.webp', '/commercial-assets/opie-009_d49KNSC9lW.webp', '/commercial-assets/IMG_0066_ut56JcA9v.webp'
+            ]}/>
 
         <div className="center text-center mt-5 mb-5" style={{width: '80%'}}>
             <div className="card-body text-center">
                 <h2 className="card-title">Subcontractors Can Be A Pain</h2>
-                <p className="card-text mt-3">
-                    That is why we strive to build a reputation of quality, timeliness, cleanliness, and value expected from our
-                    GC's.
-                    <br />
-                    <br />
-                    At Associated Pools Inc, we are a commercial swimming pool contractor with a reputation for excellence. Our team of 
-                    experienced professionals has the knowledge and expertise to design, build, and maintain commercial pools of 
-                    all shapes and sizes. From hotels and apartments to community centers and waterparks, we have the skills and 
-                    resources to bring your project to life. We are dedicated to delivering top-quality workmanship and using the 
-                    best materials available, all while adhering to industry standards and safety regulations. Contact us today 
-                    to learn more about how we can help bring your commercial pool vision to fruition.
-                    <br />
-                    <br />
+                <div className="card-text mt-3">
+                    <p>
+                        That is why we strive to build a reputation of quality, timeliness, cleanliness, and value expected from our
+                        GC's.
+                        <br />
+                        <br />
+                        At Associated Pools Inc, we are a commercial swimming pool contractor with a reputation for excellence. Our team of 
+                        experienced professionals has the knowledge and expertise to design, build, and maintain commercial pools of 
+                        all shapes and sizes. From hotels and apartments to community centers and waterparks, we have the skills and 
+                        resources to bring your project to life. We are dedicated to delivering top-quality workmanship and using the 
+                        best materials available, all while adhering to industry standards and safety regulations. Contact us today 
+                        to learn more about how we can help bring your commercial pool vision to fruition.
+                        <br />
+                        <br />
+                    </p>
                     <div className="row">
                         <div className="col">
                             <h4>
@@ -56,7 +63,7 @@ export function Commercial() {
                             </p>
                         </div>
                     </div>
-                </p>
+                </div>
                 <a href="tel:9138887946" className="button mt-5">
                     <span>Give Us A Call</span>
                     <i></i>

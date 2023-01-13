@@ -1,16 +1,18 @@
 {
   "name": "api-website",
+  "homepage": "https://justinyates887.github.io/api-website",
   "stage": "development",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.15.0",
+    "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "axios": "^0.24.0",
     "bootstrap-icons": "^1.7.2",
     "d3": "^7.3.0",
     "dotenv": "^10.0.0",
+    "gh-pages": "^4.0.0",
     "imagekitio-react": "^1.1.0",
     "jquery": "^3.6.0",
     "nodemailer": "^6.7.0",
@@ -32,6 +34,8 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

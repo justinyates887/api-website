@@ -19,7 +19,7 @@ export function People({ History }) {
             <NavHeader />
 
               <div className="img-wrapper">
-                  <img src='https://ik.imagekit.io/associatedpoolsinc/API/new_0Bcu3wR09.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672682888145' className="img-responsive" alt="Group of team members"></img>
+                  <img src='https://ik.imagekit.io/associatedpoolsinc/API/map_-NtT0wS77.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1643979899713' className="img-responsive" alt="Group of team members"></img>
               </div>
 
               <div className="people-img-overlay center">
@@ -27,15 +27,15 @@ export function People({ History }) {
                     <div>
                         <div className="row">
                             <div className="card-body">
-                                <h1 className="card-title-head text-light">A Company Is Only <br /> As Good As Its People</h1>
-                                <h4 className="card-text-head text-light mt-3">
+                                <h1 className="card-title-head text-dark">A Company Is Only <br /> As Good As Its People</h1>
+                                <h4 className="card-text-head text-dark mt-3">
                                     Our company must be pretty good then...
                                 </h4>
                             </div>
                         </div>
                         <div className="row mt-5">
                             <div className="col">
-                                <h4 className="text-center text-light">Come take a look at our heart and soul.</h4>
+                                <h4 className="text-center text-dark">Come take a look at our heart and soul.</h4>
                             </div>
                         </div>
                     </div>
@@ -110,7 +110,7 @@ export function People({ History }) {
                             {({ isVisible }) => (
                               <ProfileCard 
                                 isVisible={isVisible}
-                                imgSrc='https://ik.imagekit.io/associatedpoolsinc/API/chase_lQv_-9w02Pe.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1646404644432'
+                                imgSrc='https://ik.imagekit.io/associatedpoolsinc/API/shawn_Z3GJgIGGb.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1673620736499'
                                 name='Shawn Kays'
                                 text='
                                 Shawn, though not directly a part of Associated Pools, is in charge of running our sister company, Associated Concrete Inc.

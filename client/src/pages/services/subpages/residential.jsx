@@ -14,8 +14,8 @@ export function Residential() {
                 props={
                     [
                         '/eOne_CM-_QTwKgp.webp', '/eTwo_YawzE7Kust.webp', '/eThree_t6LSSU8H1.webp', '/eFour_mbSppmutVWn.webp', '/eFive_uEY1l5_3Rv.webp',
-                        '/eOne_CM-_QTwKgp.webp', '/eTwo_YawzE7Kust.webp', '/eThree_t6LSSU8H1.webp', '/eFour_mbSppmutVWn.webp', '/eFive_uEY1l5_3Rv.webp',
-                        '/eOne_CM-_QTwKgp.webp', '/eTwo_YawzE7Kust.webp', '/eThree_t6LSSU8H1.webp', '/eFour_mbSppmutVWn.webp', '/eFive_uEY1l5_3Rv.webp',
+                        '/res-assets/opie_019_d_MnRlZay.webp', '/res-assets/opie_020_rDo0TrWQ4.webp', '/res-assets/Service_Pools_037_qmlFST_RK.webp', '/res-assets/Service_Pools_035_iMe5fHLtd.webp', '/res-assets/Water_1_bVZBmx59b.webp',
+                        '//res-assets/IMG-0708_gm2Sa52Hs.webp', '/res-assets/D25C89C9-9CFA-4385-9959-9DA58170CF86_ZHkUtT0kq.webp', '/res-assets/IMG-0938_0kKsbyJUm.webp', '/res-assets/IMG-1161_Y-rgtwDsL.webp', '/res-assets/IMG-0261_olcwkUTAS.webp',
                     ]
                 }/>
 
@@ -62,7 +62,7 @@ export function Residential() {
                 >
                     <h3 className="vertical-timeline-element-title">Put it In Writing</h3>
                     <p>
-                        After approving your desing, you will recieve a full, itemized quote. 
+                        After approving your design, you will recieve a full, itemized quote. 
                         Once approved, we sign the contract and get you in the books!
                     </p>
                 </VerticalTimelineElement>
@@ -141,7 +141,7 @@ export function Residential() {
                     <h3 className="vertical-timeline-element-title">Plaster</h3>
                     <p>
                         Getting super close... <br/> 
-                        Plaster is the final polish for your pool, protecting the shell and giving it a stylized finish.
+                        Plaster is the final polish for your pool, protecting and waterproofing the shell, giving it a stylized finish.
                     </p>
                 </VerticalTimelineElement>
 
