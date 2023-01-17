@@ -1,5 +1,5 @@
 const axios = require('axios')
-const backendUrl = 'localhost:8081'
+const backendUrl = 'https://api-website.onrender.com/'
 
 export function sendMail(values) {
     return axios.post(`http://${backendUrl}/api/access`, {
