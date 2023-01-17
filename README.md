@@ -67,7 +67,7 @@ permission, please contact the copyright holders and delete this file.
  
 ## <a name="Important-Links"></a>Important Links
 
-Checkout the [Website](https://main--precious-lokum-b34171.netlify.app/)
+Checkout the [Website](https://api-website-yates.netlify.app/)
 
 Leave us a review on [Google](https://g.page/r/Ce7v7Ea5H2kpEB0/review)
 
