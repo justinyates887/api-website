@@ -55,7 +55,7 @@ export function Starting() {
                                 <h6 class="category text-info">Energy Efficient with a Punch</h6>
                                 <p class="card-description mt-4"> 
                                     The Pentair WhisperFlo VSF is the top of the line swimming pool pump. Its variable speed allows for automatic adjustments of flow, saving you energy costs 
-                                    while keeping your pool circulating. Standard in every pool, this pump djusts to changes in flow conditions to maintain its preprogrammed flow rate to run 
+                                    while keeping your pool circulating. Standard in every pool, this pump adjusts to changes in flow conditions to maintain its preprogrammed flow rate to run 
                                     optimally throughout the entire filtration cycle. It's like having cruise control for your pump.
                                 </p>
                             </div>

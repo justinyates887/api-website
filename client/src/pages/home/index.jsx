@@ -63,7 +63,7 @@ export function Home({ History }) {
                     className="mt-auto"
                     title="Associated Pools Inc"
                     text="Welcome to Associated Pools Inc! We have been providing top-quality swimming pool 
-                        design and construction services for over 20 years. Our team of experienced professionals is 
+                        design and construction services for over 30 years. Our team of experienced professionals is 
                         dedicated to creating the perfect pool for your home or commercial property. Contact us today 
                         to schedule a consultation and start your pool project!"
                 />

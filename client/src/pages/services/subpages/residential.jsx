@@ -37,7 +37,7 @@ export function Residential() {
                 >
                     <h3 className="vertical-timeline-element-title">Free Consultation with Owner</h3>
                     <p>
-                        Talk to Bryan about your wants and needs, ask quetions, and get a feel for us as a Company.
+                        Talk to Bryan about your wants and needs, ask questions, and get a feel for us as a Company.
                     </p>
                 </VerticalTimelineElement>
 
