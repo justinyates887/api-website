@@ -29,9 +29,9 @@ export function Home({ History }) {
                             </div>
 
                         <div className="home-img-overlay text-light" style={{width: '100%', height: '90%'}}>
-                                <h1 className="d-inline h1" style={{fontSize: "4vw"}}>Associated Pools Inc.</h1>
-                                <h2 className="card-title mt-3 mb-3"style={{fontSize: "2vw"}}>Crafting your pools since 1984</h2>
-                                <h3 className="card-text mb-5" style={{fontSize: "1vw"}}>Over 30 years of designing and creating your dream outdoor living space.</h3>
+                                <h1 className="d-inline h1" style={{fontSize: "4rem"}}>Associated Pools Inc.</h1>
+                                <h2 className="card-title mt-3 mb-3"style={{fontSize: "2rem"}}>Crafting your pools since 1984</h2>
+                                <h3 className="card-text mb-5" style={{fontSize: "1.5rem"}}>Over 30 years of designing and creating your dream outdoor living space.</h3>
                                 <a href="/services/residential" className="button mt-5" name="Gallery Link">
                                     <span>Get Inspired</span>
                                     <i></i>
