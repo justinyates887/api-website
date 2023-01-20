@@ -434,7 +434,7 @@ img {
 /*--------------------------Profile Cards------------------------------------*/
 .card {
   border-radius: 10px;
-  width: 600px;
+  width: 50vw;
   padding: 20px;
   margin-top: 50px;
   margin-bottom: 50px;
