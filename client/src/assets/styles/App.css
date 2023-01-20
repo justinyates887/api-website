@@ -442,6 +442,14 @@ img {
   margin-right: auto;
 }
 
+@media only screen and (max-width: 772px) {
+  .card {
+    width: 80vw;
+  }
+}
+
+
+
 .profile-pic {
   width: 60px;
   height: 60px;
@@ -474,6 +482,14 @@ ul.timeline {
   margin-left: 10%;
   margin-right: 15%;
 }
+
+@media only screen and (max-width: 772px) {
+  ul.timeline {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+}
+
 ul.timeline:before {
   content: ' ';
   background: #d4d9df;

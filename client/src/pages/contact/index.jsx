@@ -102,7 +102,7 @@ export function Contact( props ) {
             <div className="row">
                 <div className="card" style={{minWidth: '40%'}}>
                     <div className="row">
-                        <div className="col m-4">
+                        <div className="col m-4 p-4">
                             <h2 className="mb-4">Give Us A Shout</h2>
                             <form onSubmit={handleSubmit}>
                                 <div className="row">
